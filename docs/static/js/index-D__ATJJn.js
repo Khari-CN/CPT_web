@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vueexport-helper-DlAUqK2U.js";import{$ as r,V as c}from"./@vue-BAiyQqhe.js";const n={};function o(t,s){return c(),r("div",null," 404 ")}const f=e(n,[["render",o]]);export{f as default};
