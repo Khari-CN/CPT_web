@@ -267,7 +267,7 @@
       <div class="content" text="18 center #fff" pt-230>
         不同交易产品在交易时间、杠杆比例等方面存在差异，这些重要信息都在合约细则中明确载明。客户想深入了解各交易产品详情，请查看合约细则
         <br />
-        <n-button mt-10 w-120 h-40 color="#00A3E7" round>合约细则</n-button>
+        <n-button @click="toFile" mt-10 w-120 h-40 color="#00A3E7" round>合约细则</n-button>
       </div>
     </div>
     <div class="advantage6" py-80 bg="#F5F7F9">
@@ -449,6 +449,10 @@
   import { storeToRefs } from 'pinia'
 
   const { isMobile } = storeToRefs(useGlobalStore())
+
+  const toFile = () => {
+    window.open('/product-agreement.pdf', '_blank')
+  }
 </script>
 
 <style scoped>

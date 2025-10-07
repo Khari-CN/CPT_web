@@ -1,4 +1,5 @@
 <script setup lang="ts">
+  import { onBeforeMount } from 'vue'
   import { useGlobalStore } from './store'
   import { isMobileDevice } from './utils'
 

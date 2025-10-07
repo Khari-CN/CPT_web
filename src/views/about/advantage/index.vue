@@ -564,11 +564,6 @@
     .description-item {
       background: linear-gradient(180deg, #2c64ff 0%, #3b81fe 100%);
     }
-    .advantage8 {
-      background: url('@/assets/images/advantage/advantage8-bg.png') no-repeat
-        center;
-      background-size: cover;
-    }
     .inexpensive {
       .item1 {
         background: url('@/assets/images/advantage/inexpensive-bg1.png')

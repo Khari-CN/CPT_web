@@ -52,7 +52,7 @@
         <div cursor-pointer hover:c-blue>交易账户</div>
         <div cursor-pointer hover:c-blue>平台下载</div> -->
       </div>
-      <div v-if="isMobile" ml-20>
+      <div v-if="isMobile && route.name !== 'home'" ml-20>
         <n-dropdown
           trigger="click"
           :options="
@@ -150,8 +150,8 @@
 
   const handleSelect = (key: string) => {
     if (key === route.name) return
-    if (key === 'agreement') {
-      window.open('/src/assets/images/product-agreement.pdf', '_blank')
+    if (key === 'agreement' && !isMobile.value) {
+      window.open('/product-agreement.pdf', '_blank')
       return
     }
     window.scrollTo({ top: 0 })
