@@ -1,0 +1,311 @@
+@media screen and (max-width: 768px) {
+  .banner {
+    background: url('@/assets/images/contact/m/banner.png') no-repeat center;
+    background-size: cover;
+    height: 48.75rem;
+    padding-top: 0;
+    .title {
+      font-size: 7.5rem;
+      padding-top: 5rem;
+    }
+    .sub {
+      font-size: 4.5rem;
+      margin-top: 2rem;
+    }
+    .line-right {
+      border-top: 2px solid;
+      margin-top: 5.5rem;
+      width: 20rem;
+      border-image: linear-gradient(
+          90deg,
+          rgba(216.00000232458115, 216.00000232458115, 216.00000232458115, 1),
+          rgba(216.00000232458115, 216.00000232458115, 216.00000232458115, 0)
+        )
+        2 2;
+    }
+    .line-left {
+      border-top: 2px solid;
+      margin-top: 5.5rem;
+      width: 20rem;
+      border-image: linear-gradient(
+          90deg,
+          rgba(216.00000232458115, 216.00000232458115, 216.00000232458115, 0),
+          rgba(216.00000232458115, 216.00000232458115, 216.00000232458115, 1)
+        )
+        2 2;
+    }
+  }
+  .block1 {
+    text-align: center;
+    padding: 5rem 4rem;
+    .des {
+      font-size: 3.75rem;
+    }
+    .wrapper {
+      gap: 5rem 12rem;
+      margin-top: 4rem;
+      flex-wrap: wrap;
+      justify-content: start;
+      img {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
+  }
+  .block2 {
+    background: #f4f7f9;
+    padding: 5rem 4rem;
+    .title {
+      font-size: 6rem;
+    }
+
+    .des {
+      margin-top: 2.5rem;
+      font-size: 3.5rem;
+    }
+    .wrapper {
+      flex-direction: column;
+      margin-top: 5rem;
+      gap: 2.5rem;
+      .item {
+        width: 100%;
+        height: 41.5rem;
+        div {
+          font-size: 6rem;
+        }
+      }
+      .item1 {
+        background: url('@/assets/images/contact/m/block2-bg1.png') no-repeat
+          center;
+        background-size: cover;
+      }
+      .item2 {
+        background: url('@/assets/images/contact/m/block2-bg2.png') no-repeat
+          center;
+        background-size: cover;
+      }
+      .item3 {
+        background: url('@/assets/images/contact/m/block2-bg3.png') no-repeat
+          center;
+        background-size: cover;
+      }
+    }
+  }
+  .block3 {
+    padding: 5rem 4rem;
+    .title {
+      font-size: 6rem;
+    }
+
+    .des {
+      margin-top: 2.5rem;
+      font-size: 3.5rem;
+    }
+    .wrapper {
+      flex-direction: column;
+      margin-top: 5rem;
+      gap: 2.5rem;
+      .item {
+        width: 100%;
+        height: 30rem;
+        padding: 6.25rem 7.5rem;
+        div {
+          font-size: 6rem;
+        }
+      }
+      .item1 {
+        background: url('@/assets/images/contact/m/block3-bg1.png') no-repeat
+          center;
+        background-size: cover;
+      }
+      .item2 {
+        background: url('@/assets/images/contact/m/block3-bg2.png') no-repeat
+          center;
+        background-size: cover;
+      }
+    }
+  }
+  .block4 {
+    padding: 5rem 4rem;
+    .title {
+      font-size: 6rem;
+    }
+
+    .des {
+      margin-top: 2.5rem;
+      font-size: 3.5rem;
+    }
+    .wrapper {
+      flex-direction: column;
+      margin-top: 5rem;
+      gap: 2.5rem;
+      .item {
+        width: 100%;
+        height: 41.5rem;
+        padding: 6.25rem 7.5rem;
+        div {
+          font-size: 6rem;
+        }
+      }
+      .item1 {
+        background: url('@/assets/images/contact/m/block4-bg1.png') no-repeat
+          center;
+        background-size: cover;
+      }
+      .item2 {
+        background: url('@/assets/images/contact/m/block4-bg2.png') no-repeat
+          center;
+        background-size: cover;
+      }
+      .item3 {
+        background: url('@/assets/images/contact/m/block4-bg3.png') no-repeat
+          center;
+        background-size: cover;
+      }
+    }
+  }
+  .block5 {
+    padding: 5rem 4rem;
+    .title {
+      font-size: 6rem;
+    }
+
+    .des {
+      margin-top: 2.5rem;
+      font-size: 3.5rem;
+    }
+    .wrapper {
+      flex-direction: column;
+      margin-top: 5rem;
+      gap: 2.5rem;
+      .item {
+        width: 100%;
+        height: 30rem;
+        padding: 6.25rem 7.5rem;
+        div {
+          font-size: 6rem;
+        }
+      }
+      .item1 {
+        background: url('@/assets/images/contact/m/block5-bg1.png') no-repeat
+          center;
+        background-size: cover;
+      }
+      .item2 {
+        background: url('@/assets/images/contact/m/block5-bg2.png') no-repeat
+          center;
+        background-size: cover;
+      }
+    }
+  }
+  .block6 {
+    padding: 5rem 4rem;
+    background: #f4f7f9;
+    .title {
+      font-size: 6rem;
+    }
+
+    .des {
+      margin-top: 2.5rem;
+      font-size: 3.5rem;
+    }
+    .wrapper {
+      flex-direction: column;
+      margin-top: 5rem;
+      gap: 2.5rem;
+      .item {
+        width: 100%;
+        height: 41.5rem;
+        padding: 6.25rem 7.5rem;
+        div {
+          font-size: 6rem;
+        }
+      }
+      .item1 {
+        background: url('@/assets/images/contact/m/block6-bg1.png') no-repeat
+          center;
+        background-size: cover;
+      }
+      .item2 {
+        background: url('@/assets/images/contact/m/block6-bg2.png') no-repeat
+          center;
+        background-size: cover;
+      }
+    }
+  }
+  .block7 {
+    background: url('@/assets/images/contact/m/block7-bg.png') no-repeat
+      center;
+    background-size: cover;
+    padding: 0 4rem;
+    width: 100%;
+    height: 90.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content {
+      padding-top: 0;
+      font-size: 6rem;
+    }
+  }
+  .advantage6 {
+    padding: 5rem 4rem;
+    font-size: 4rem;
+    .title {
+      font-size: 6rem;
+    }
+    .wrapper {
+      flex-wrap: wrap;
+      gap: 3.5rem;
+      text-align: center;
+      justify-content: start;
+      .description-item {
+        background: linear-gradient(180deg, #2c64ff 0%, #3b81fe 100%);
+        flex-direction: column;
+        gap: 1rem;
+        height: auto;
+        width: 26.25rem;
+        padding: 4rem;
+        .main {
+          font-weight: 700;
+        }
+        .sub {
+          font-size: 3.25rem;
+        }
+      }
+    }
+  }
+  .advantage7 {
+    background: url('@/assets/images/about/m/download-bg.png') no-repeat center;
+    background-size: cover;
+    padding: 5rem 4rem;
+    height: 69rem;
+    .title {
+      font-size: 6rem;
+      width: 48rem;
+      margin: auto;
+    }
+    .wrapper {
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 5rem;
+      .download-item {
+        padding: 0 1rem 0 4rem;
+        flex: 1;
+        height: 17rem;
+        gap: 2.5rem;
+        border-radius: 2.5rem;
+        img {
+          width: 12rem;
+        }
+        .main-content {
+          font-size: 3.5rem;
+        }
+        .sub-content {
+          font-size: 3rem;
+          color: #808080;
+        }
+      }
+    }
+  }
+}

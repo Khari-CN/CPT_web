@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  color: #252d47;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 4px;
+  }
+}
+
+@media screen and (max-width: 1660px) and (min-width: 769px) {
+  html {
+    font-size: 3px;
+  }
+}
+
+@media screen and (min-width: 1660px) {
+  html {
+    font-size: 4px;
+  }
+}

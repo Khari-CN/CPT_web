@@ -1,0 +1,306 @@
+@media screen and (max-width: 768px) {
+  .banner {
+    background: url('@/assets/images/advantage/m/banner.png') no-repeat center;
+    background-size: cover;
+    height: 48.75rem;
+    .title {
+      font-size: 7.5rem;
+      padding-top: 5rem;
+    }
+    .sub {
+      font-size: 4.5rem;
+      margin-top: 2rem;
+    }
+    .line-right {
+      border-top: 2px solid;
+      margin-top: 5.5rem;
+      width: 20rem;
+      border-image: linear-gradient(
+          90deg,
+          rgba(216.00000232458115, 216.00000232458115, 216.00000232458115, 1),
+          rgba(216.00000232458115, 216.00000232458115, 216.00000232458115, 0)
+        )
+        2 2;
+    }
+    .line-left {
+      border-top: 2px solid;
+      margin-top: 5.5rem;
+      width: 20rem;
+      border-image: linear-gradient(
+          90deg,
+          rgba(216.00000232458115, 216.00000232458115, 216.00000232458115, 0),
+          rgba(216.00000232458115, 216.00000232458115, 216.00000232458115, 1)
+        )
+        2 2;
+    }
+  }
+  .advantage1 {
+    text-align: center;
+    padding: 5rem;
+    .title {
+      font-size: 6rem;
+    }
+    .list-wrapper {
+      gap: 5rem 11.5rem;
+      margin-top: 4rem;
+      flex-wrap: wrap;
+      justify-content: start;
+      img {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
+  }
+  .advantage2 {
+    background: #f4f7f9;
+    background-size: cover;
+    padding: 5rem 4rem;
+    .title {
+      font-size: 6rem;
+    }
+
+    .description {
+      margin-top: 4rem;
+      font-size: 3rem;
+      padding: 0 4rem;
+    }
+    .list-wrapper {
+      flex-direction: column;
+      margin-top: 5rem;
+      gap: 2.5rem;
+      .item {
+        width: 100%;
+        height: auto;
+        img {
+          display: block;
+          width: 100%;
+          height: 35rem;
+        }
+        .content {
+          padding: 4rem;
+          .title {
+            font-size: 4.5rem;
+            margin-top: 0;
+            line-height: 6.5rem;
+          }
+          .sub {
+            margin-top: 1.5rem;
+            font-size: 3.5rem;
+          }
+        }
+      }
+    }
+  }
+  .advantage3 {
+    text-align: center;
+    padding: 5rem 4rem;
+    .title {
+      font-size: 6rem;
+    }
+    .wrapper {
+      flex-direction: column;
+      margin-top: 4rem;
+      gap: 2.5rem;
+      .item1,
+      .item2 {
+        width: 100%;
+        padding: 4rem;
+        height: 30rem;
+      }
+      .item1 {
+        background: url('@/assets/images/advantage/m/advantage3-bg1.png')
+          no-repeat center;
+        background-size: cover;
+      }
+      .item2 {
+        background: url('@/assets/images/advantage/m/advantage3-bg2.png')
+          no-repeat center;
+        background-size: cover;
+      }
+      .title {
+        font-size: 4rem;
+        line-height: 6rem;
+        text-align: start;
+      }
+      .content {
+        font-size: 3.25rem;
+        margin-top: 1.5rem;
+        width: 47rem;
+        text-align: start;
+      }
+    }
+  }
+  .intelligence {
+    text-align: center;
+    padding: 5rem 4rem;
+    flex-direction: column;
+    .title {
+      font-size: 6rem;
+    }
+    .wrapper {
+      flex-direction: column;
+      margin-top: 4rem;
+      gap: 2.5rem;
+      .item {
+        width: 100%;
+        height: auto;
+        .content {
+          padding: 4rem;
+          text-align: start;
+          .title {
+            font-size: 4.5rem;
+            line-height: 6.5rem;
+            text-align: start;
+            margin-top: 0;
+            font-weight: 700;
+          }
+          .des {
+            font-size: 3.4rem;
+          }
+        }
+      }
+    }
+  }
+  .inexpensive {
+    text-align: center;
+    padding: 5rem 4rem;
+    .title {
+      font-size: 6rem;
+    }
+    .wrapper {
+      flex-direction: column;
+      margin-top: 4rem;
+      gap: 2.5rem;
+      .item1,
+      .item2 {
+        width: 100%;
+        padding: 4rem;
+        height: 30rem;
+      }
+      .item1 {
+        background: url('@/assets/images/advantage/m/inexpensive-bg1.png')
+          no-repeat center;
+        background-size: cover;
+      }
+      .item2 {
+        background: url('@/assets/images/advantage/m/inexpensive-bg2.png')
+          no-repeat center;
+        background-size: cover;
+      }
+      .title {
+        font-size: 4rem;
+        line-height: 6rem;
+        text-align: start;
+      }
+      .content {
+        font-size: 3.25rem;
+        margin-top: 1.5rem;
+        width: 47rem;
+        text-align: start;
+      }
+    }
+  }
+  .advantage4 {
+    padding: 5rem 4rem;
+    flex-direction: column;
+    .title {
+      font-size: 6rem;
+    }
+    .wrapper {
+      flex-direction: column;
+      margin-top: 4rem;
+      gap: 2.5rem;
+      .item {
+        width: 100%;
+        height: auto;
+        .content {
+          padding: 4rem;
+          text-align: start;
+          .title {
+            font-size: 4.5rem;
+            line-height: 6.5rem;
+            text-align: start;
+            margin-top: 0;
+            font-weight: 700;
+          }
+          .des {
+            font-size: 3.4rem;
+          }
+        }
+      }
+    }
+  }
+  .advantage5 {
+    background: url('@/assets/images/advantage/m/advantage5-bg.png') no-repeat
+      center;
+    background-size: cover;
+    padding: 0 11rem;
+    padding-top: 32rem;
+    width: 100%;
+    height: 90.5rem;
+    .content {
+      padding-top: 0;
+      font-size: 6rem;
+    }
+  }
+  .advantage6 {
+    padding: 5rem 4rem;
+    font-size: 4rem;
+    .title {
+      font-size: 6rem;
+    }
+    .wrapper {
+      flex-wrap: wrap;
+      gap: 3.5rem;
+      text-align: center;
+      justify-content: start;
+      .description-item {
+        background: linear-gradient(180deg, #2c64ff 0%, #3b81fe 100%);
+        flex-direction: column;
+        gap: 1rem;
+        height: auto;
+        width: 26.25rem;
+        padding: 4rem;
+        .main {
+          font-weight: 700;
+        }
+        .sub {
+          font-size: 3.25rem;
+        }
+      }
+    }
+  }
+  .download {
+    background: url('@/assets/images/about/m/download-bg.png') no-repeat center;
+    background-size: cover;
+    padding: 5rem 4rem;
+    height: 69rem;
+    .title {
+      font-size: 6rem;
+      width: 48rem;
+      margin: auto;
+    }
+    .wrapper {
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 5rem;
+      .download-item {
+        padding: 0 1rem 0 4rem;
+        flex: 1;
+        height: 17rem;
+        gap: 2.5rem;
+        border-radius: 2.5rem;
+        img {
+          width: 12rem;
+        }
+        .main-content {
+          font-size: 3.5rem;
+        }
+        .sub-content {
+          font-size: 3rem;
+          color: #808080;
+        }
+      }
+    }
+  }
+}
