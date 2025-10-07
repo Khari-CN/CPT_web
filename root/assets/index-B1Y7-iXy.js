@@ -1,1 +1,0 @@
-import{_ as e}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{x as r,y as c}from"./index-C518Mqt3.js";const n={};function o(t,s){return c(),r("div",null," 404 ")}const f=e(n,[["render",o]]);export{f as default};
