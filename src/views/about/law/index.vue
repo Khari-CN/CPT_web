@@ -35,6 +35,7 @@
             h-50
             round
             color="#00A3E7"
+            @click="jumpTo({ name: 'order' })"
             >查看文件</n-button
           >
         </div>
@@ -59,6 +60,7 @@
             h-50
             round
             color="#00A3E7"
+            @click="jumpTo({ name: 'risk' })"
             >查看文件</n-button
           >
         </div>
@@ -83,11 +85,12 @@
             h-50
             round
             color="#00A3E7"
+            @click="jumpTo({ name: 'service' })"
             >查看文件</n-button
           >
         </div>
         <div
-        class="item"
+          class="item"
           w-1440
           h-200
           bg="white"
@@ -99,12 +102,20 @@
         >
           <img w-105 h120 src="@/assets/images/law/block1-icon4.png" />
           <div class="des" text="30" font-700 ml-60>隐私权政策</div>
-          <n-button class="btn" absolute right-70 w-160 h-50 round color="#00A3E7"
+          <n-button
+            class="btn"
+            absolute
+            right-70
+            w-160
+            h-50
+            round
+            color="#00A3E7"
+            @click="jumpTo({ name: 'privacy' })"
             >查看文件</n-button
           >
         </div>
         <div
-        class="item"
+          class="item"
           w-1440
           h-200
           bg="white"
@@ -116,14 +127,24 @@
         >
           <img w-105 h120 src="@/assets/images/law/block1-icon5.png" />
           <div class="des" text="30" font-700 ml-60>Cookies政策</div>
-          <n-button class="btn" absolute right-70 w-160 h-50 round color="#00A3E7"
+          <n-button
+            class="btn"
+            absolute
+            right-70
+            w-160
+            h-50
+            round
+            color="#00A3E7"
+            @click="jumpTo({ name: 'cookies' })"
             >查看文件</n-button
           >
         </div>
       </div>
     </div>
     <div class="block2" h-600 pt-230 text="center 48 white" font-700>
-      我们提供完整规范的法律文件，确保每项都有法可依、有据可循，<br v-if="!isMobile" />
+      我们提供完整规范的法律文件，确保每项都有法可依、有据可循，<br
+        v-if="!isMobile"
+      />
       为你的投资交易提供坚实的法律保障
     </div>
     <div class="advantage6" py-80 bg="#F5F7F9">
@@ -222,7 +243,9 @@
       </div>
     </div>
     <div class="advantage7" h-370 pt-60 pb-80>
-      <div class="title" text="48 center #fff" font-700>只需三分钟开户 迈向财富的第一步</div>
+      <div class="title" text="48 center #fff" font-700>
+        只需三分钟开户 迈向财富的第一步
+      </div>
       <div class="wrapper" relative flex justify-center gap-40 mt-40>
         <div
           class="download-item"
@@ -299,10 +322,13 @@
 </template>
 
 <script setup lang="ts">
+  import { router } from '@/router'
   import { useGlobalStore } from '@/store'
+import { jumpTo } from '@/utils'
   import { storeToRefs } from 'pinia'
 
   const { isMobile } = storeToRefs(useGlobalStore())
+
 </script>
 
 <style scoped>

@@ -4,7 +4,7 @@ import { constantRoute, noFountRoute, policyPageRoute } from './routes'
 
 export const router = createRouter({
   history: createWebHistory(),
-  routes: [...constantRoute, noFountRoute, policyPageRoute],
+  routes: constantRoute,
 })
 
 export function setupRouter(app: App<Element>) {

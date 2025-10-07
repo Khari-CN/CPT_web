@@ -13,7 +13,7 @@ export function isMobileDevice() {
 
 export const jumpTo = (route: RouteLocationRaw) => {
   window.scrollTo({ top: 0 })
-  router.push( route)
+  router.push(route)
 }
 
 // export function isMobileDevice() {
