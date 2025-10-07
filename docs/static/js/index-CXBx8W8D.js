@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vueexport-helper-DlAUqK2U.js";import{$ as t,V as o}from"./@vue-BAiyQqhe.js";const c={},r={"text-16":""};function n(s,_){return o(),t("div",r," 404 ")}const i=e(c,[["render",n]]);export{i as default};

@@ -1,9 +1,9 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
 import type { App } from 'vue'
-import { constantRoute, noFountRoute, policyPageRoute } from './routes'
+import { constantRoute } from './routes'
 
 export const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: constantRoute,
 })
 
