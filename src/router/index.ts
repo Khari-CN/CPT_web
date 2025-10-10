@@ -1,9 +1,16 @@
-import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
+import {
+  createRouter,
+  createWebHistory,
+  createWebHashHistory,
+} from 'vue-router'
 import type { App } from 'vue'
 import { constantRoute } from './routes'
 
 export const router = createRouter({
-  history: createWebHashHistory(),
+  history:
+    import.meta.env.MODE !== 'production'
+      ? createWebHashHistory()
+      : createWebHistory(),
   routes: constantRoute,
 })
 

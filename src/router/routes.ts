@@ -46,6 +46,18 @@ export const menuRoute: RouteRecordRaw[] = [
     meta: { title: '优惠活动' },
     children: [
       {
+        path: 'new-customer',
+        name: 'newCustomer',
+        meta: { title: '新客活动' },
+        component: () => import('@/views/activity/newCustomer/index.vue'),
+      },
+      {
+        path: 'recommend',
+        name: 'recommend',
+        meta: { title: '推荐活动' },
+        component: () => import('@/views/activity/recommend/index.vue'),
+      },
+      {
         path: 'proxy',
         name: 'proxy',
         meta: { title: '代理合作' },
@@ -177,6 +189,12 @@ export const policyPageRoute: RouteRecordRaw = {
   ],
 }
 
+export const activityTermsRoute: RouteRecordRaw = {
+  path: '/activity/terms',
+  name: 'terms',
+  component: () => import('@/views/activity/terms/index.vue'),
+}
+
 export const noFountRoute: RouteRecordRaw = {
   path: '/:path(.*)*',
   name: 'not-found',
@@ -187,5 +205,6 @@ export const constantRoute: RouteRecordRaw[] = [
   homeRoute,
   ...menuRoute,
   policyPageRoute,
+  activityTermsRoute,
   noFountRoute,
 ]

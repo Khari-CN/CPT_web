@@ -9,7 +9,7 @@
     flex
     items-center
     justify-between
-    z-10
+    z-999
   >
     <div flex items-center>
       <icon-custom-logo
@@ -103,7 +103,7 @@
     w-full
     fixed
     top-44
-    z-10
+    z-999
     bg="#fff"
   >
     <div

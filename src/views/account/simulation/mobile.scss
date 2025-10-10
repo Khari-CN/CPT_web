@@ -121,7 +121,8 @@
   }
 
   .block4 {
-    background: url('@/assets/images/simulation/m/block4-bg.png') no-repeat center;
+    background: url('@/assets/images/simulation/m/block4-bg.png') no-repeat
+      center;
     background-size: cover;
     padding: 0 4rem;
     width: 100%;
@@ -225,6 +226,7 @@
       gap: 2rem;
       margin-top: 5rem;
       .download-item {
+        min-width: 167px;
         padding: 0 1rem 0 4rem;
         flex: 1;
         height: 17rem;

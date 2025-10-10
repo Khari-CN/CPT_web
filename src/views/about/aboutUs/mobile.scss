@@ -232,7 +232,8 @@
       flex-wrap: wrap;
       gap: 2rem;
       margin-top: 5rem;
-      .download-item {
+        .download-item {      min-width: 167px;
+
         padding: 0 1rem 0 4rem;
         flex: 1;
         height: 17rem;
