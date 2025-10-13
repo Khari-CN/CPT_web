@@ -181,7 +181,8 @@
     isShowMobileMenu.value = false
     if (key === route.name) return
     if (key === 'agreement' && !isMobile.value) {
-      window.open('/product-agreement.pdf', '_blank')
+      const base = import.meta.env.MODE === 'uat' ? '/CPT_web' : '/'
+      window.open(`${base}/product-agreement.pdf`, '_blank')
       return
     }
     window.scrollTo({ top: 0 })
