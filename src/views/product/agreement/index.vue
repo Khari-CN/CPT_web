@@ -463,7 +463,8 @@
   const { isMobile } = storeToRefs(useGlobalStore())
 
   const toFile = () => {
-    window.open('/product-agreement.pdf', '_blank')
+    const base = import.meta.env.MODE === 'uat' ? '/CPT_web' : '/'
+    window.open(`${base}/product-agreement.pdf`, '_blank')
   }
 </script>
 
