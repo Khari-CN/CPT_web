@@ -14,12 +14,12 @@
     </div>
 
     <div class="block2" bg="#f4f7f9" px-16 py-20>
-      <div text="24 center" font-700>交易时间</div>
+      <div class="title" text="24 center" font-700>交易时间</div>
       <table m-auto mt-10 cellspacing="0">
         <colgroup>
-          <col w-103 />
-          <col w-120 />
-          <col w-120 />
+          <col class="col1" w-103 />
+          <col class="col2" w-120 />
+          <col class="col3" w-120 />
         </colgroup>
         <thead>
           <tr h-40>
@@ -139,12 +139,12 @@
       </table>
     </div>
     <div class="block3" bg="white" px-16 py-20>
-      <div text="24 center" font-700>保证金 & 杠杆</div>
+      <div class="title" text="24 center" font-700>保证金 & 杠杆</div>
       <table m-auto mt-10 cellspacing="0">
         <colgroup>
-          <col w-103 />
-          <col w-120 />
-          <col w-120 />
+          <col class="col1" w-103 />
+          <col class="col2" w-120 />
+          <col class="col3" w-120 />
         </colgroup>
         <thead>
           <tr h-40>
@@ -213,11 +213,11 @@
       </table>
     </div>
     <div class="block4" bg="f4f7f9" px-16 py-20>
-      <div text="24 center" font-700>最低点差</div>
+      <div class="title" text="24 center" font-700>最低点差</div>
       <table m-auto mt-10 cellspacing="0">
         <colgroup>
-          <col w-171 />
-          <col w-171 />
+          <col class="col1" w-171 />
+          <col class="col2" w-171 />
         </colgroup>
         <thead>
           <tr h-40>
@@ -277,7 +277,14 @@
       <div class="content" text="18 center #fff" pt-230>
         不同交易产品在交易时间、杠杆比例等方面存在差异，这些重要信息都在合约细则中明确载明。客户想深入了解各交易产品详情，请查看合约细则
         <br />
-        <n-button @click="toFile" mt-10 w-120 h-40 color="#00A3E7" round
+        <n-button
+          class="btn"
+          @click="toFile"
+          mt-10
+          w-120
+          h-40
+          color="#00A3E7"
+          round
           >合约细则</n-button
         >
       </div>
@@ -463,7 +470,7 @@
   const { isMobile } = storeToRefs(useGlobalStore())
 
   const toFile = () => {
-    const base = import.meta.env.MODE === 'uat' ? '/CPT_web' : '/'
+    const base = import.meta.env.MODE === 'uat' ? '/CPT_web' : ''
     window.open(`${base}/product-agreement.pdf`, '_blank')
   }
 </script>
@@ -471,5 +478,125 @@
 <style scoped>
   @import url('./mobile.scss');
   @media screen and (min-width: 768px) {
+    .banner {
+      background: url('@/assets/images/agreement/banner.png') no-repeat center;
+      background-size: cover;
+      .line-right {
+        border-top: 2px solid;
+        margin-top: 18rem;
+        width: 35rem;
+        border-image: linear-gradient(
+            90deg,
+            rgba(216.00000232458115, 216.00000232458115, 216.00000232458115, 1),
+            rgba(216.00000232458115, 216.00000232458115, 216.00000232458115, 0)
+          )
+          2 2;
+      }
+      .line-left {
+        border-top: 2px solid;
+        margin-top: 18rem;
+        width: 35rem;
+        border-image: linear-gradient(
+            90deg,
+            rgba(216.00000232458115, 216.00000232458115, 216.00000232458115, 0),
+            rgba(216.00000232458115, 216.00000232458115, 216.00000232458115, 1)
+          )
+          2 2;
+      }
+    }
+    .block1 {
+      height: 92.5rem;
+      padding-top: 28.5rem;
+      font-size: 12rem;
+      background: url('@/assets/images/real/block1-bg.png') no-repeat center;
+      background-size: cover;
+    }
+    .block2,
+    .block3,
+    .block4 {
+      padding: 15rem 0;
+      .title {
+        font-size: 12rem;
+      }
+
+      table {
+        margin-top: 10rem;
+        border-left: 1px solid #f4f4f4;
+        border-radius: 2rem;
+        .col1 {
+          width: 77.5rem;
+        }
+        .col2 {
+          width: 160.5rem;
+        }
+        .col3 {
+          width: 122rem;
+        }
+        th {
+          padding: 5.2rem 7.5rem;
+          font-size: 6rem;
+          color: white;
+          background: linear-gradient(180deg, #006aff 0%, #1161d1 99%);
+          border-right: 1px solid #f4f4f4;
+          border-bottom: 1px solid #f4f4f4;
+        }
+
+        td {
+          padding: 5.2rem 7.5rem;
+          font-size: 4rem;
+          background: #fff;
+          border-right: 1px solid #f4f4f4;
+          border-bottom: 1px solid #f4f4f4;
+          &:nth-of-type(1) {
+            font-size: 6rem;
+            font-weight: 700;
+          }
+        }
+        tr:nth-of-type(2) td {
+          background: #f4f7f9;
+        }
+      }
+    }
+
+    .block4 {
+      background: #f4f7f9;
+      table {
+        .col1,
+        .col2 {
+          width: 180rem;
+        }
+      }
+    }
+
+    .block5 {
+      background: url('@/assets/images/agreement/block5-bg.png') no-repeat
+        center;
+      background-size: cover;
+      padding: 0 4rem;
+      width: 100%;
+      height: 150rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .content {
+        padding-top: 0;
+        font-size: 12rem;
+        max-width: 288.5rem;
+        .btn {
+          margin-top: 10rem;
+          height: 20rem;
+          width: 92rem;
+          font-size: 6rem;
+        }
+      }
+    }
+    .advantage7 {
+      background: url('@/assets/images/advantage/advantage7-bg.png') no-repeat
+        center;
+      background-size: cover;
+    }
+    .description-item {
+      background: linear-gradient(180deg, #2c64ff 0%, #3b81fe 100%);
+    }
   }
 </style>

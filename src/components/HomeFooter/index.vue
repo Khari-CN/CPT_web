@@ -195,11 +195,11 @@
 
   const routerToName = (name: string) => {
     console.log(name, isMobile.value)
-    if (name === 'agreement' && !isMobile.value) {
-      const base = import.meta.env.MODE === 'uat' ? '/CPT_web' : '/'
-      window.open(`${base}/product-agreement.pdf`, '_blank')
-      return
-    }
+    // if (name === 'agreement' && !isMobile.value) {
+    //   const base = import.meta.env.MODE === 'uat' ? '/CPT_web' : '/'
+    //   window.open(`${base}/product-agreement.pdf`, '_blank')
+    //   return
+    // }
     window.scrollTo({ top: 0 })
     router.push({ name })
   }

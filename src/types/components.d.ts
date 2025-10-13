@@ -24,6 +24,7 @@ declare module 'vue' {
     NInput: typeof import('naive-ui')['NInput']
     NInputGroup: typeof import('naive-ui')['NInputGroup']
     NQrCode: typeof import('naive-ui')['NQrCode']
+    NQRCode: typeof import('naive-ui')['NQRCode']
     NScrollbar: typeof import('naive-ui')['NScrollbar']
     PolicyPage: typeof import('./../components/PolicyPage/index.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

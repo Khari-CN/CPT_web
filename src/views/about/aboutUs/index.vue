@@ -32,9 +32,10 @@
       </div>
       <div v-if="!isMobile" flex justify-center gap-20 mt-40 text-center>
         <n-carousel
+          autoplay
+          :interval="2000"
           :slides-per-view="4"
           :space-between="20"
-          :loop="false"
           draggable
         >
           <div>

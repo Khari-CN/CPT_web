@@ -3,7 +3,7 @@
     <!-- 头部 -->
     <home-title></home-title>
     <!-- banner -->
-    <n-carousel v-if="!isMobile" autoplay>
+    <n-carousel v-if="!isMobile" autoplay :interval="2000">
       <img cursor-pointer w-full src="@/assets/images/home/banner.png" />
       <img
         cursor-pointer
@@ -28,7 +28,7 @@
         </ul>
       </template>
     </n-carousel>
-    <n-carousel v-else class="m" autoplay>
+    <n-carousel v-else class="m" autoplay :interval="2000">
       <img
         cursor-pointer
         w-full
@@ -229,10 +229,10 @@
       </div>
       <div v-if="!isMobile" flex justify-center gap-20 mt-60 text-center>
         <n-carousel
+          :interval="2000"
           :slides-per-view="4"
           :space-between="20"
           autoplay
-          :loop="false"
           draggable
         >
           <div>
