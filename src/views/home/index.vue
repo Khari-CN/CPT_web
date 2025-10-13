@@ -228,46 +228,54 @@
         </div>
       </div>
       <div v-if="!isMobile" flex justify-center gap-20 mt-60 text-center>
-        <div>
-          <img src="@/assets/images/home/award-1.png" w-240 h-240 alt="" />
-          <div>迪拜MFFM奖项</div>
-        </div>
-        <div>
-          <img src="@/assets/images/home/award-2.png" w-240 h-240 alt="" />
-          <div>国际金融奖项</div>
-        </div>
-        <div>
-          <img src="@/assets/images/home/award-3.png" w-240 h-240 alt="" />
+        <n-carousel
+          :slides-per-view="4"
+          :space-between="20"
+          autoplay
+          :loop="false"
+          draggable
+        >
           <div>
-            最具信誉 <br />
-            外汇经纪商
+            <img src="@/assets/images/home/award-1.png" w-240 h-240 alt="" />
+            <div>迪拜MFFM奖项</div>
           </div>
-        </div>
-        <div>
-          <img src="@/assets/images/home/award-4.png" w-240 h-240 alt="" />
           <div>
-            最具信誉 <br />
-            外汇经纪商
+            <img src="@/assets/images/home/award-2.png" w-240 h-240 alt="" />
+            <div>国际金融奖项</div>
           </div>
-        </div>
-        <div>
-          <img src="@/assets/images/home/award-5.png" w-240 h-240 alt="" />
           <div>
-            阿联酋国际金融 <br />
-            衍生品提供商
+            <img src="@/assets/images/home/award-3.png" w-240 h-240 alt="" />
+            <div>
+              最具信誉 <br />
+              外汇经纪商
+            </div>
           </div>
-        </div>
-        <div>
-          <img src="@/assets/images/home/award-6.png" w-240 h-240 alt="" />
-          <div>最佳监管经纪商</div>
-        </div>
-        <div>
-          <img src="@/assets/images/home/award-7.png" w-240 h-240 alt="" />
           <div>
-            南非交易商博览会 <br />
-            金赞助商
+            <img src="@/assets/images/home/award-4.png" w-240 h-240 alt="" />
+            <div>
+              最具信誉 <br />
+              外汇经纪商
+            </div>
           </div>
-        </div>
+          <div>
+            <img src="@/assets/images/home/award-5.png" w-240 h-240 alt="" />
+            <div>
+              阿联酋国际金融 <br />
+              衍生品提供商
+            </div>
+          </div>
+          <div>
+            <img src="@/assets/images/home/award-6.png" w-240 h-240 alt="" />
+            <div>最佳监管经纪商</div>
+          </div>
+          <div>
+            <img src="@/assets/images/home/award-7.png" w-240 h-240 alt="" />
+            <div>
+              南非交易商博览会 <br />
+              金赞助商
+            </div>
+          </div>
+        </n-carousel>
       </div>
       <div v-else mt-20>
         <n-scrollbar x-scrollable>
@@ -359,7 +367,7 @@
             alt=""
           />
           <div class="name" font-500 mt-170 text="48 white">外汇</div>
-          <div class="introduction" mt-20 text="15 white">
+          <div class="introduction" mt-20 text="16 white">
             全球规模最大、流动性最强的市场，日均交易量超过数万亿美元，我们提供超过
             60 种全球货币给你选择
           </div>
@@ -441,7 +449,17 @@
           alt=""
         />
         <div class="introduction" ml-100 flex flex-col gap-21>
-          <div w-300 h-80 flex items-center p-16 bg="#00429F" rounded-8 gap-20>
+          <div
+            :class="{ active: platformActiveItemIndex === 1 }"
+            w-300
+            h-80
+            flex
+            items-center
+            p-16
+            bg="#00429F"
+            rounded-8
+            gap-20
+          >
             <img
               w-48
               h-48
@@ -453,7 +471,17 @@
               <div>全球客户投资者支持</div>
             </div>
           </div>
-          <div w-300 h-80 flex items-center p-16 bg="#00429F" rounded-8 gap-20>
+          <div
+            :class="{ active: platformActiveItemIndex === 2 }"
+            w-300
+            h-80
+            flex
+            items-center
+            p-16
+            bg="#00429F"
+            rounded-8
+            gap-20
+          >
             <img
               w-48
               h-48
@@ -464,7 +492,17 @@
               <div font-400>最佳投资平台</div>
             </div>
           </div>
-          <div w-300 h-80 flex items-center p-16 bg="#00429F" rounded-8 gap-20>
+          <div
+            :class="{ active: platformActiveItemIndex === 3 }"
+            w-300
+            h-80
+            flex
+            items-center
+            p-16
+            bg="#00429F"
+            rounded-8
+            gap-20
+          >
             <img
               w-48
               h-48
@@ -475,7 +513,17 @@
               <div font-400>最受欢迎金融应用程式</div>
             </div>
           </div>
-          <div w-300 h-80 flex items-center p-16 bg="#00429F" rounded-8 gap-20>
+          <div
+            :class="{ active: platformActiveItemIndex === 4 }"
+            w-300
+            h-80
+            flex
+            items-center
+            p-16
+            bg="#00429F"
+            rounded-8
+            gap-20
+          >
             <img
               w-48
               h-48
@@ -488,7 +536,17 @@
           </div>
         </div>
         <div class="introduction" ml-70 flex flex-col gap-21>
-          <div w-300 h-80 flex items-center p-16 bg="#00429F" rounded-8 gap-20>
+          <div
+            :class="{ active: platformActiveItemIndex === 5 }"
+            w-300
+            h-80
+            flex
+            items-center
+            p-16
+            bg="#00429F"
+            rounded-8
+            gap-20
+          >
             <img
               w-48
               h-48
@@ -499,7 +557,17 @@
               <div font-400>专业技术分析工具</div>
             </div>
           </div>
-          <div w-300 h-80 flex items-center p-16 bg="#00429F" rounded-8 gap-20>
+          <div
+            :class="{ active: platformActiveItemIndex === 6 }"
+            w-300
+            h-80
+            flex
+            items-center
+            p-16
+            bg="#00429F"
+            rounded-8
+            gap-20
+          >
             <img
               w-48
               h-48
@@ -510,7 +578,17 @@
               <div font-400>毫秒级订单处理速度</div>
             </div>
           </div>
-          <div w-300 h-80 flex items-center p-16 bg="#00429F" rounded-8 gap-20>
+          <div
+            :class="{ active: platformActiveItemIndex === 7 }"
+            w-300
+            h-80
+            flex
+            items-center
+            p-16
+            bg="#00429F"
+            rounded-8
+            gap-20
+          >
             <img
               w-48
               h-48
@@ -521,7 +599,17 @@
               <div font-400>极具竞争力的点差</div>
             </div>
           </div>
-          <div w-300 h-80 flex items-center p-16 bg="#00429F" rounded-8 gap-20>
+          <div
+            :class="{ active: platformActiveItemIndex === 8 }"
+            w-300
+            h-80
+            flex
+            items-center
+            p-16
+            bg="#00429F"
+            rounded-8
+            gap-20
+          >
             <img
               w-48
               h-48
@@ -561,7 +649,14 @@
             <div text-16>下载></div>
           </div>
         </div>
-        <div class="platform-btn" w-450 h-120 flex items-center>
+        <div
+          v-if="!isMobile"
+          class="platform-btn"
+          w-450
+          h-120
+          flex
+          items-center
+        >
           <img
             ml-105
             w-80
@@ -584,39 +679,60 @@
       </div>
       <div class="welfare-wrapper" mt-60 flex justify-center gap-45>
         <div class="welfare-item1 welfare-item" w-450 h-284 p-40>
-          <div text="36 white">新客专享</div>
+          <div class="sub-title" text="36 white">新客专享</div>
           <div class="description" text="18 white" mt-10>
             仅限新客！ <br />
             专属赠金回赠等你赚取
           </div>
           <div mt-40>
-            <n-button w-160 h-50 color="#FBD87D" round text-color="#11131F"
+            <n-button
+              class="btn"
+              w-160
+              h-50
+              color="#FBD87D"
+              round
+              text-color="#11131F"
+              @click="jumpTo({ name: 'newCustomer' })"
               >立即体验</n-button
             >
           </div>
         </div>
         <div class="welfare-item2 welfare-item" w-450 h-284 p-40>
-          <div text="36 white">推荐好友</div>
+          <div class="sub-title" text="36 white">推荐好友</div>
           <div class="description" text="18 white" mt-10>
             推荐好友加入注册！
             <br />
             实现共赢，获取赠金回赠
           </div>
           <div mt-40>
-            <n-button w-160 h-50 color="#FBD87D" round text-color="#11131F"
+            <n-button
+              class="btn"
+              w-160
+              h-50
+              color="#FBD87D"
+              round
+              text-color="#11131F"
+              @click="jumpTo({ name: 'recommend' })"
               >立即推荐</n-button
             >
           </div>
         </div>
         <div class="welfare-item3 welfare-item" w-450 h-284 p-40>
-          <div text="36 white">尊贵客户</div>
+          <div class="sub-title" text="36 white">尊贵客户</div>
           <div class="description" text="18 white" mt-10>
             尊享专属点差回赠！
             <br />
             交易额度越高，回赠奖励越多
           </div>
           <div mt-40>
-            <n-button w-160 h-50 color="#FBD87D" round text-color="#11131F"
+            <n-button
+              class="btn"
+              w-160
+              h-50
+              color="#FBD87D"
+              round
+              text-color="#11131F"
+              @click="jumpTo({ name: 'vip' })"
               >立即尊享
             </n-button>
           </div>
@@ -642,7 +758,7 @@
             </div>
             <div ml-22>
               <div text-24 font-700>注册开户</div>
-              <div text="16 #2c2c2c">填写你的个人资讯并验证</div>
+              <div text="18 #2c2c2c">填写你的个人资讯并验证</div>
             </div>
           </div>
           <div class="step" flex>
@@ -658,7 +774,7 @@
             </div>
             <div ml-22>
               <div text-24 font-700>账户入金</div>
-              <div text="16 #2c2c2c">多种存款选项，即时为你的账户入金</div>
+              <div text="18 #2c2c2c">多种存款选项，即时为你的账户入金</div>
             </div>
           </div>
           <div class="step" flex>
@@ -672,7 +788,7 @@
             </div>
             <div ml-22>
               <div text-24 font-700>领取奖励</div>
-              <div text="16 #2c2c2c">享受各账户级别点差优惠，开始交易</div>
+              <div text="18 #2c2c2c">享受各账户级别点差优惠，开始交易</div>
             </div>
           </div>
           <div>
@@ -752,10 +868,26 @@
   import { useGlobalStore } from '@/store'
   import { jumpTo } from '@/utils'
   import { storeToRefs } from 'pinia'
+  import { onMounted, onUnmounted, ref } from 'vue'
 
   const globalStore = useGlobalStore()
 
   const { isMobile } = storeToRefs(globalStore)
+
+  let timer: NodeJS.Timeout
+  const platformActiveItemIndex = ref(1)
+
+  onMounted(() => {
+    timer = setInterval(() => {
+      platformActiveItemIndex.value > 8
+        ? (platformActiveItemIndex.value = 1)
+        : (platformActiveItemIndex.value += 1)
+    }, 3000)
+  })
+
+  onUnmounted(() => {
+    clearInterval(timer)
+  })
 </script>
 
 <style scoped lang="scss">
@@ -796,6 +928,18 @@
       margin-top: -15rem;
       padding-top: 30rem;
       padding-bottom: 20rem;
+      ::v-deep(
+        .n-carousel .n-carousel__dots.n-carousel__dots--dot .n-carousel__dot
+      ) {
+        background-color: #fff;
+      }
+      ::v-deep(
+        .n-carousel
+          .n-carousel__dots.n-carousel__dots--dot
+          .n-carousel__dot.n-carousel__dot--active
+      ) {
+        background-color: #60a5fa;
+      }
     }
 
     .product {
@@ -807,6 +951,9 @@
       background: url('@/assets/images/home/platform-bg.png') no-repeat center;
       background-size: cover;
       color: #fff;
+      .introduction .active {
+        background-color: #48a0e1;
+      }
       .platform-btn {
         background: linear-gradient(180deg, #0028ad 0%, #001987 100%);
         border-radius: 3rem;

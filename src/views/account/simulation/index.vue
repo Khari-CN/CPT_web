@@ -19,7 +19,7 @@
         它为用户提供与真实交易环境完全一致的市场行情和交易功能，<br
           v-if="!isMobile"
         />
-        但所有交易行为均不涉及真实资金。
+        但所有交易行为均不涉及真实资金
       </div>
     </div>
 
@@ -123,13 +123,13 @@
     </div>
     <div class="block3" h-870 pt-60 pb-80>
       <div class="title" text="center 48" font-700>零风险入門体验</div>
-      <div class="sub" text="16 center" mt-20>
+      <div class="sub" text="16px center" mt-20>
         模拟账户提供了一个安全、真实的学习环境，帮助投资者在投入真实资金前获得宝贵的市场经验和交易技能。使
         <br
           v-if="!isMobile"
         />用模拟账户，能够显著提高投资者的准备程度，为未来的真实交易成功奠定坚实基础
       </div>
-      <div class="content" flex justify-center items-center mt-40 gap-70>
+      <div class="content" flex justify-center items-center mt-40 gap-50>
         <div class="register-left" rounded-16 w-600 p-40>
           <div class="step" flex>
             <div relative pt-10 pb-80>
@@ -144,7 +144,7 @@
             </div>
             <div ml-22>
               <div text-24 font-700>注册模拟账户</div>
-              <div text="16 #2c2c2c">填写你的个人资讯</div>
+              <div text="16px #2c2c2c">填写你的个人资讯</div>
             </div>
           </div>
           <div class="step" flex>
@@ -154,7 +154,7 @@
             </div>
             <div ml-22>
               <div text-24 font-700>开始体验</div>
-              <div text="16 #2c2c2c">下载手机交易程式或交易平台，即时体验</div>
+              <div text="16px #2c2c2c">下载手机交易程式或交易平台，即时体验</div>
             </div>
           </div>
 
@@ -172,7 +172,7 @@
             >
           </div>
         </div>
-        <div class="register-right" relative w-966 h-541>
+        <div class="register-right" relative w-auto h-541>
           <img
             v-if="!isMobile"
             w-767

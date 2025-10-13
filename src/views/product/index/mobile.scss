@@ -43,7 +43,6 @@
   }
   .block2 {
     background: #f4f7f9;
-    background-size: cover;
     padding: 5rem 4rem;
     .title {
       font-size: 6rem;
@@ -60,6 +59,7 @@
       margin-top: 5rem;
       padding: 0;
       gap: 2.5rem;
+      min-width: 100%;
       .item {
         width: 100%;
         height: auto;
@@ -148,7 +148,7 @@
       flex-wrap: wrap;
       gap: 3.5rem;
       text-align: center;
-      justify-content: start;
+      justify-content: center;
       .description-item {
         background: linear-gradient(180deg, #2c64ff 0%, #3b81fe 100%);
         flex-direction: column;

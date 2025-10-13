@@ -7,15 +7,15 @@
     text="#2c2c2c"
   >
     <div v-if="!isMobile" w-1440 m-auto>
-      <div flex justify-center gap-260>
+      <div flex justify-between>
         <div v-for="item in footerList">
-          <div text="18" font-700 mb-10>{{ item.title }}</div>
+          <div text="18px" font-700 mb-10>{{ item.title }}</div>
           <div flex flex-col gap-10 mb-40>
             <div
               v-for="subItem in item.items"
               cursor-pointer
               hover:c-blue
-              text="16"
+              text="16px"
               @click="routerToName(subItem.routeName)"
             >
               {{ subItem.name }}

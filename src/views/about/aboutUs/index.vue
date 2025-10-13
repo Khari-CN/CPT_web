@@ -11,7 +11,7 @@
     </div>
     <div class="story" h-520 pl-240 pt-80>
       <div text-48 font-700>我们的故事</div>
-      <div class="story-content" mt-30 text-16 w-620>
+      <div class="story-content" mt-30 text-18px w-620>
         CPT Markets
         是一家享有盛誉的国际公司，致力于为全球投资者提供多元化、高流动性的交易选择。我们提供超过130种交易产品，涵盖外汇、大宗商品及指数等多个领域，满足不同交易者的策略与需求。
         <br />
@@ -31,46 +31,53 @@
         我们所获得的每一项荣誉，即是行业与市场对我们专业能力和服务品质的权威认可，更是使我们不断超越自我的责任与使命
       </div>
       <div v-if="!isMobile" flex justify-center gap-20 mt-40 text-center>
-        <div>
-          <img src="@/assets/images/home/award-1.png" w-240 h-240 alt="" />
-          <div>迪拜MFFM奖项</div>
-        </div>
-        <div>
-          <img src="@/assets/images/home/award-2.png" w-240 h-240 alt="" />
-          <div>国际金融奖项</div>
-        </div>
-        <div>
-          <img src="@/assets/images/home/award-3.png" w-240 h-240 alt="" />
+        <n-carousel
+          :slides-per-view="4"
+          :space-between="20"
+          :loop="false"
+          draggable
+        >
           <div>
-            最具信誉 <br />
-            外汇经纪商
+            <img src="@/assets/images/home/award-1.png" w-240 h-240 alt="" />
+            <div text="16">迪拜MFFM奖项</div>
           </div>
-        </div>
-        <div>
-          <img src="@/assets/images/home/award-4.png" w-240 h-240 alt="" />
           <div>
-            最具信誉 <br />
-            外汇经纪商
+            <img src="@/assets/images/home/award-2.png" w-240 h-240 alt="" />
+            <div text="16">国际金融奖项</div>
           </div>
-        </div>
-        <div>
-          <img src="@/assets/images/home/award-5.png" w-240 h-240 alt="" />
           <div>
-            阿联酋国际金融 <br />
-            衍生品提供商
+            <img src="@/assets/images/home/award-3.png" w-240 h-240 alt="" />
+            <div text="16">
+              最具信誉 <br />
+              外汇经纪商
+            </div>
           </div>
-        </div>
-        <div>
-          <img src="@/assets/images/home/award-6.png" w-240 h-240 alt="" />
-          <div>最佳监管经纪商</div>
-        </div>
-        <div>
-          <img src="@/assets/images/home/award-7.png" w-240 h-240 alt="" />
           <div>
-            南非交易商博览会 <br />
-            金赞助商
+            <img src="@/assets/images/home/award-4.png" w-240 h-240 alt="" />
+            <div text="16">
+              最具信誉 <br />
+              外汇经纪商
+            </div>
           </div>
-        </div>
+          <div>
+            <img src="@/assets/images/home/award-5.png" w-240 h-240 alt="" />
+            <div text="16">
+              阿联酋国际金融 <br />
+              衍生品提供商
+            </div>
+          </div>
+          <div>
+            <img src="@/assets/images/home/award-6.png" w-240 h-240 alt="" />
+            <div text="16">最佳监管经纪商</div>
+          </div>
+          <div>
+            <img src="@/assets/images/home/award-7.png" w-240 h-240 alt="" />
+            <div text="16">
+              南非交易商博览会 <br />
+              金赞助商
+            </div>
+          </div>
+        </n-carousel>
       </div>
       <div v-else mt-20>
         <n-scrollbar x-scrollable>
@@ -131,7 +138,9 @@
     <div class="organization" pt-60 pb-80>
       <div class="title" text="white 48 center" font-700>全球金融机构信赖</div>
       <div class="sub" text="white 16 center">
-        我们深知金融服务的基石是信任，而信任源于安全合规与严格监管
+        我们深知金融服务的基石是信任 <span v-if="!isMobile">，</span>
+        <br v-if="isMobile" />
+        而信任源于安全合规与严格监管
       </div>
       <div class="list" flex flex-wrap justify-center gap-90 mt-30>
         <div
@@ -145,16 +154,15 @@
           rounded-16
         >
           <div class="title" text="#1677FF 20" font-900>
-            Aofa- <br />
-            CPT Global Limited
+            Aofa- CPT Global Limited
           </div>
-          <div class="content" w-560 text="16 #2C2C2C" mt-10 break-all>
+          <div class="content" w-560 text="16px #2C2C2C" mt-10 break-all>
             CPT Global Limited（“CPT
             Global”）是一家由安儒昂离岸金融管理局授权的公司，许可证号为
             L15643/CPTG。该许可证允许 CPT Global 从事外汇
             (Forex)、股票、差价合约 (CFD)、外汇商品和受监管证券的经纪服务。
           </div>
-          <div class="content" text="16 #2C2C2C" mt-10>
+          <div class="sub-content" text="16 #2C2C2C" mt-10>
             CPT Global 注册于科摩罗联盟安儒昂自治岛穆察穆
           </div>
           <img
@@ -179,10 +187,9 @@
           rounded-16
         >
           <div class="title" text="#1677FF 20" font-900>
-            FSCA - <br />
-            CPT Markets PTY Ltd
+            FSCA - CPT Markets PTY Ltd
           </div>
-          <div class="content" w-560 text="16 #2C2C2C" mt-10 break-all>
+          <div class="content" w-560 text="16px #2C2C2C" mt-10 break-all>
             CPT Markets PTY LTD (“CPT SA”)为CPT Markets
             Ltd所使用的交易名称，注册地为南非，受南非金融部监管局监管，
             <br />
@@ -209,11 +216,8 @@
           bg="white"
           rounded-16
         >
-          <div class="title" text="#1677FF 20" font-900>
-            IFSC- <br />
-            CPT Belize
-          </div>
-          <div class="content" w-560 text="16 #2C2C2C" mt-10 break-all>
+          <div class="title" text="#1677FF 20" font-900>IFSC- CPT Belize</div>
+          <div class="content" w-560 text="16px #2C2C2C" mt-10 break-all>
             CPT Markets为CPT Markets
             Limited所使用的交易名称，注册地为伯利茲，受伯利茲国际金融服务委员会监管，
             <br />
@@ -241,10 +245,9 @@
           rounded-16
         >
           <div class="title" text="#1677FF 20" font-900>
-            FCA - <br />
-            CPT Markets UK Ltd
+            FCA - CPT Markets UK Ltd
           </div>
-          <div class="content" w-560 text="16 #2C2C2C" mt-10 break-all>
+          <div class="content" w-560 text="16px #2C2C2C" mt-10 break-all>
             CPT Markets UK为CPT Markets UK
             Limited所使用的交易名称，该公司的注册地址位于英格兰威尔士，注册编号为6707165，由英国金融行为管理局（FCA）授权和管理，编号为606110。CPT
             Markets UK Limited是CPT Markets Limited的关联公司。
@@ -266,7 +269,7 @@
       <div class="title" text="48 center" font-700>
         汇聚世界级人才的多元化团队
       </div>
-      <div class="sub" text="16 center" mt-20>
+      <div class="sub" text="16px center" mt-20>
         我们有来自不同领域的顶尖专业背景人才，遍布全球的卓越团队，持续创新，深刻理解全球市场，并为客户创造真正具有前瞻性的交易平台
       </div>
       <img
@@ -344,8 +347,9 @@
     </div>
     <div class="subscription" text-white h-470 pt-60>
       <div class="title" text="48 center" font-700>独家优惠 仅限订阅</div>
-      <div class="sub" text="16 center" mt-20>
-        想第一时间获知市场最新动态及GPT Markets Group最新的活动奖励吗？ <br />
+      <div class="sub" text="16px center" mt-20>
+        想第一时间获知市场最新动态 <br v-if="isMobile" />
+        及GPT Markets Group最新的活动奖励吗？ <br />
         主立即订阅我们的专属通讯，助你在投资路上快人一步
       </div>
       <div class="input-wrapper" flex justify-center mt-40>
@@ -580,6 +584,18 @@
     .award {
       background: url('@/assets/images/about/award-bg.png') no-repeat center;
       background-size: cover;
+      ::v-deep(
+        .n-carousel .n-carousel__dots.n-carousel__dots--dot .n-carousel__dot
+      ) {
+        background-color: #fff;
+      }
+      ::v-deep(
+        .n-carousel
+          .n-carousel__dots.n-carousel__dots--dot
+          .n-carousel__dot.n-carousel__dot--active
+      ) {
+        background-color: #60a5fa;
+      }
     }
     .organization {
       background: url('@/assets/images/about/organization-bg.png') no-repeat

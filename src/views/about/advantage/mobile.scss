@@ -45,6 +45,7 @@
       margin-top: 4rem;
       flex-wrap: wrap;
       justify-content: start;
+      min-width: 100%;
       img {
         width: 20rem;
         height: 20rem;
@@ -68,6 +69,7 @@
       flex-direction: column;
       margin-top: 5rem;
       gap: 2.5rem;
+      min-width: 100%;
       .item {
         width: 100%;
         height: auto;
@@ -141,6 +143,7 @@
       flex-direction: column;
       margin-top: 4rem;
       gap: 2.5rem;
+      min-width: 100%;
       .item {
         width: 100%;
         height: auto;
@@ -210,6 +213,7 @@
       flex-direction: column;
       margin-top: 4rem;
       gap: 2.5rem;
+      min-width: 100%;
       .item {
         width: 100%;
         height: auto;
@@ -253,7 +257,7 @@
       flex-wrap: wrap;
       gap: 3.5rem;
       text-align: center;
-      justify-content: start;
+      justify-content: center;
       .description-item {
         background: linear-gradient(180deg, #2c64ff 0%, #3b81fe 100%);
         flex-direction: column;

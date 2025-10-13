@@ -11,7 +11,7 @@
     </div>
     <div class="advantage1" pt-60 pb-80>
       <div class="title" text-48 font-700 text-center>为何选择我们？</div>
-      <div class="list-wrapper" flex justify-center gap-180 mt-60 text-center>
+      <div class="list-wrapper" flex justify-center gap-180 mt-60 text-center min-w="1440">
         <div>
           <img
             src="@/assets/images/advantage/advantage1-icon1.png"
@@ -23,7 +23,7 @@
             极致安全 <br />
             安心托付
           </div>
-          <div v-else text-16 mt-20>极致安全・安心托付</div>
+          <div v-else text-16px mt-20>极致安全・安心托付</div>
         </div>
         <div>
           <img
@@ -36,7 +36,7 @@
             丰富产品 <br />
             一站式管理
           </div>
-          <div v-else text-16 mt-20>丰富产品・一站式管理</div>
+          <div v-else text-16px mt-20>丰富产品・一站式管理</div>
         </div>
         <div>
           <img
@@ -49,7 +49,7 @@
             智能工具<br />
             赋能决策
           </div>
-          <div v-else text-16 mt-20>智能工具・赋能决策</div>
+          <div v-else text-16px mt-20>智能工具・赋能决策</div>
         </div>
         <div>
           <img
@@ -62,7 +62,7 @@
             低門槛 <br />
             低成本
           </div>
-          <div v-else text-16 mt-20>低門槛 ・低成本</div>
+          <div v-else text-16px mt-20>低門槛 ・低成本</div>
         </div>
         <div>
           <img
@@ -75,13 +75,13 @@
             流畅体验<br />
             卓越服务
           </div>
-          <div v-else text-16 mt-20>流畅体验・卓越服务</div>
+          <div v-else text-16px mt-20>流畅体验・卓越服务</div>
         </div>
       </div>
     </div>
     <div class="advantage2" pt-60 pb-80 bg="#F5F7F9">
       <div class="title" text-48 font-700 text-center>极致安全・安心托付</div>
-      <div class="list-wrapper" flex justify-center gap-45 mt-40>
+      <div class="list-wrapper" flex justify-center gap-45 mt-40 min-w="1440" m-auto>
         <div class="item" bg-white rounded-16 w-450 h-384>
           <img
             src="@/assets/images/advantage/advantage2-icon1.png"
@@ -147,7 +147,7 @@
     </div>
     <div class="intelligence" pt-60 pb-80 bg="#F5F7F9">
       <div class="title" text-48 font-700 text-center>智能工具・赋能决策</div>
-      <div class="wrapper" flex justify-center gap-45 mt-40>
+      <div class="wrapper" flex justify-center gap-45 mt-40 min-w="1440" m-auto>
         <div class="item" bg-white rounded-16 w-450 h-360>
           <img
             v-if="!isMobile"
@@ -237,7 +237,7 @@
     </div>
     <div class="advantage4" pt-60 pb-80 bg="#F5F7F9">
       <div class="title" text-48 font-700 text-center>流畅体验・卓越服务</div>
-      <div class="wrapper" flex justify-center gap-45 mt-40>
+      <div class="wrapper" flex justify-center gap-45 mt-40 min-w="1440" m-auto>
         <div class="item" bg-white rounded-16 w-450 h-360>
           <img
             v-if="!isMobile"

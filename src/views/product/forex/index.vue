@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="block1" h-369 pt-86 pl-240>
-      <div class="des" w-620 text-16>
+      <div class="des" w-620 text-18px>
         <div>
           我们是一家致力于为全球投资者提供专业、高效、安全外汇及差价合约（CFD）交易服务的顶尖金融科技平台。我们集成了最先进的交易技术、深度的机构级流动性和强大的风险管理工具，为你连接全球外汇市场，提供超过 100+ 种货币对的交易机会。
         </div>
@@ -28,14 +28,13 @@
 
     <div class="block2" pt-60 pb-80 bg="#F5F7F9">
       <div class="title" text-48 font-700 text-center>关于外汇投资</div>
-      <div class="des" mt-20 mb-40 text="center 16">
+      <div class="des" mt-20 mb-40 text="center 16px">
         作为全球最大、流动性最高的金融市场，外汇市场日均交易量超过数万亿美元，其特点包括：
       </div>
       <div
         class="wrapper"
         flex
         flex-wrap
-        px-240
         justify-center
         gap-x-45
         gap-y-40
@@ -48,7 +47,7 @@
             h-220
             alt=""
           />
-          <div class="content" px-35>
+          <div class="content" px-25>
             <div class="title" text-24 mt-15 font-700>双向交易</div>
             <div class="sub" text-16 mt-5>
               支持“做多”和“做空”两种模式。无论汇率上涨还是下跌，均有盈利机会
@@ -62,7 +61,7 @@
             h-220
             alt=""
           />
-          <div class="content" px-35>
+          <div class="content" px-25>
             <div class="title" text-24 mt-15 font-700>24小时交易</div>
             <div class="sub" text-16 mt-5>
               全球主要金融中心接力开市，投资者可在任何时间进行交易
@@ -76,7 +75,7 @@
             h-220
             alt=""
           />
-          <div class="content" px-35>
+          <div class="content" px-25>
             <div class="title" text-24 mt-15 font-700>杠杆效应</div>
             <div class="sub" text-16 mt-5>
               允许投资者以较小的保证金（本金）进行更大额度的交易，有机会放大收益
@@ -90,7 +89,7 @@
             h-220
             alt=""
           />
-          <div class="content" px-35>
+          <div class="content" px-25>
             <div class="title" text-24 mt-15 font-700>公平透明</div>
             <div class="sub" text-16 mt-5>
               外汇市场受全球宏观经济和政策影响，难以被单一机构操纵，信息相对公开透明
@@ -104,7 +103,7 @@
             h-220
             alt=""
           />
-          <div class="content" px-35>
+          <div class="content" px-25>
             <div class="title" text-24 mt-15 font-700>高流动性</div>
             <div class="sub" text-16 mt-5>
               巨大的交易量使得资金进出容易，执行速度快
@@ -118,7 +117,7 @@
             h-220
             alt=""
           />
-          <div class="content" px-35>
+          <div class="content" px-25>
             <div class="title" text-24 mt-15 font-700>大量货币对可供选择</div>
             <div class="sub" text-16 mt-5>
               拥有多样化的选择是捕捉机遇的关键，因此我们为你提供了极丰富的外汇货币对，让你的投资策略得以全面施展
@@ -132,7 +131,7 @@
       <div class="title" text-48 font-700 text-center>
         为何选择我们进行外汇投资？
       </div>
-      <div class="des" mt-20 mb-40 text="center 16">
+      <div class="des" mt-20 mb-40 text="center 16px">
         作为全球最大、流动性最高的金融市场，外汇市场日均交易量超过数万亿美元，其特点包括：
       </div>
       <div class="item1 item" w-1440 h-170 m-auto rounded-16 flex py-25 px-30>

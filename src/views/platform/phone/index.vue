@@ -11,7 +11,7 @@
     </div>
 
     <div class="block1" h-744 py-80 px-240>
-      <div class="des" text="16">
+      <div class="des" text="16px">
         我们的金融交易平台手机App是一款专业、安全且高效的移动投资工具，让你随时随地掌控全球金融市场。无论你是经验丰富的交易员还是投资新手，这款App都旨在为你提供无缝的交易体验和全面的市场资讯，将整个金融市场轻松放入你的口袋
       </div>
       <div class="des sub" my-20 font-700 text="20">
@@ -80,7 +80,7 @@
 
     <div class="block2" pt-60 pb-80 bg="#F5F7F9">
       <div class="title" text-48 font-700 text-center>平台优点</div>
-      <div class="wrapper" flex flex-col items-center gap-20>
+      <div class="wrapper" flex flex-col items-center gap-20 mt-40>
         <div class="item" bg="#fff" w-1440 rounded-16>
           <div class="head" text="24 #fff center" font-700 leading-60 w-260>
             1. 极致便捷与流动性
@@ -138,7 +138,7 @@
         我们的App同时支持iOS和安卓两大主流移动操作系统，<br v-if="!isMobile" />
         为所有用户提供一致、稳定和流畅的交易体验
       </div>
-      <div class="item" w-1440 bg="#F4F7F9" p-40 flex gap-40 rounded-16>
+      <div class="item" w-1440 bg="#F4F7F9" p-40 flex gap-40 rounded-16 mt-40>
         <img w-160 h-160 src="@/assets/images/phone/ios-blue.png" alt="" />
         <div class="content">
           <div class="title" text-36 font-700>iOS 版本</div>
@@ -166,7 +166,7 @@
         </div>
       </div>
       <div class="item" w-1440 bg="#F4F7F9" p-40 flex gap-40 rounded-16 mt-40>
-        <img w-160 h-160 src="@/assets/images/phone/ios-blue.png" alt="" />
+        <img w-160 h-160 src="@/assets/images/phone/android-blue.png" alt="" />
         <div class="content">
           <div class="title" text-36 font-700>安卓版本</div>
           <div class="des" text-16>

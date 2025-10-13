@@ -12,7 +12,7 @@
 
     <div class="block1" h-369 pt-106>
       <div class="des" text-36 text-center m-auto font-700>
-        这是开启投资之旅的第一步，更是影响未来投资的关键决定。 <br v-if="!isMobile" />
+        这是开启投资之旅的第一步，更是影响未来投资的关键决定 <br v-if="!isMobile" />
         为此，我们特别准备了标准，专业，尊贵账户，帮助你根据自身需求选择最合适的账户类型
       </div>
     </div>
@@ -133,7 +133,7 @@
             </div>
             <div ml-22>
               <div text-24 font-700>注册开户</div>
-              <div text="16 #2c2c2c">填写你的个人资讯并验证</div>
+              <div text="16px #2c2c2c">填写你的个人资讯并验证</div>
             </div>
           </div>
           <div class="step" flex>
@@ -149,7 +149,7 @@
             </div>
             <div ml-22>
               <div text-24 font-700>账户入金</div>
-              <div text="16 #2c2c2c">多种存款选项，即时为你的账户入金</div>
+              <div text="16px #2c2c2c">多种存款选项，即时为你的账户入金</div>
             </div>
           </div>
           <div class="step" flex>
@@ -163,7 +163,7 @@
             </div>
             <div ml-22>
               <div text-24 font-700>领取奖励</div>
-              <div text="16 #2c2c2c">享受各账户级别点差优惠，开始交易</div>
+              <div text="16px #2c2c2c">享受各账户级别点差优惠，开始交易</div>
             </div>
           </div>
           <div>
@@ -430,6 +430,7 @@
       table {
         th {
           color: white;
+          font-size: 18px;
           border-radius: 4rem 4rem 0 0;
         }
         th:nth-of-type(2) {

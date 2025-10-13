@@ -11,7 +11,7 @@
     </div>
 
     <div class="block1" h-369 pt-86 pl-240>
-      <div class="des" w-620 text-16>
+      <div class="des" w-620 text-18px>
         <div>
           CPT Markets是拥有相关金融牌照、技术领先、安全合规的服务平台。 <br />
           我们致力于通过创新的金融产品与数字科技，为广大用户提供便捷、多元的投资服务
@@ -33,16 +33,15 @@
 
     <div class="block2" pt-60 pb-80 bg="#F5F7F9">
       <div class="title" text-48 font-700 text-center>代理合作的优势与好处</div>
-      <div class="des" mt-20 mb-40 text="center 16">
+      <div class="des" mt-20 mb-40 text="center 16px">
         我们为合作伙伴提供的不仅是一个产品，更是一个全方位赋能、高回报、强支持的事业平台
       </div>
       <div
         class="wrapper"
         flex
         flex-wrap
-        px-240
         justify-center
-        gap-x-45
+        gap-x-30
         gap-y-40
         mt-40
       >
@@ -134,7 +133,7 @@
     </div>
     <div class="block3" pt-60 pb-80>
       <div class="title" text-48 font-700 text-center>我们理想的合作伙伴</div>
-      <div class="wrapper" flex flex-wrap px-240 justify-center gap-40 mt-40>
+      <div class="wrapper" flex flex-wrap justify-center gap-40 mt-40 min-w="1440" m-auto>
         <div class="item1 item" w-450 h-220 p-30>
           <div text-28 font-700 w-230>
             认可金融科技行业，对财富管理领域有浓厚兴趣
@@ -163,7 +162,7 @@
     </div>
     <div class="block4" pt-60 pb-80>
       <div class="title" text-48 font-700 text-center>随时联系</div>
-      <div class="des" mt-20 text="16 center">
+      <div class="des" mt-20 text="16px center">
         我们提供全天候多渠道客服支持，能快速联系到我们，及时解决你的问题和需求
       </div>
       <div class="wrapper" flex justify-center gap-40 mt-40>

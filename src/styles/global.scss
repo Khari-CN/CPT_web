@@ -17,12 +17,24 @@ html {
 
 @media screen and (max-width: 1660px) and (min-width: 769px) {
   html {
-    font-size: 3.5px;
+    font-size: 3.6px;
   }
 }
 
 @media screen and (min-width: 1660px) {
   html {
     font-size: 4px;
+  }
+}
+
+#title-dropdown{
+  margin-top: 8.5rem;
+}
+
+#selected-item {
+  .n-dropdown-option-body {
+    &::before {
+      background-color: #48a0e1;
+    }
   }
 }

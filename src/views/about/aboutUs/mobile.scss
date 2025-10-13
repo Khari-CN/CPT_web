@@ -68,6 +68,7 @@
     padding: 7rem 4rem 5rem 4rem;
     .title {
       font-size: 6rem;
+      margin-top: 3rem;
     }
     .sub {
       font-size: 3rem;
@@ -84,7 +85,11 @@
         }
         .content {
           width: 100%;
-          font-size: 3rem;
+          font-size: 3.5rem;
+          margin-top: 7rem;
+        }
+        .sub-content{
+          font-size: 3.5rem;
           margin-top: 2rem;
         }
       }

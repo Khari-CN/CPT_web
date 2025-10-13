@@ -23,6 +23,7 @@
       <div class="menu" flex items-center gap-60 text-20>
         <n-dropdown
           v-for="menu in menuRoute"
+          id="title-dropdown"
           trigger="hover"
           :options="
             menu.children?.map((item) => ({
@@ -31,6 +32,8 @@
             }))
           "
           :render-label="renderLabel"
+          :theme-overrides="dropdownOverrides"
+          :node-props="nodeProps"
           @select="handleSelect"
         >
           <div
@@ -41,16 +44,10 @@
                 ? '#60a5fa'
                 : '',
             }"
-            @click="router.push({ name: 'aboutUs' })"
           >
             {{ menu.meta?.title }}
           </div>
         </n-dropdown>
-
-        <!-- <div cursor-pointer hover:c-blue>优惠活动</div>
-        <div cursor-pointer hover:c-blue>交易产品</div>
-        <div cursor-pointer hover:c-blue>交易账户</div>
-        <div cursor-pointer hover:c-blue>平台下载</div> -->
       </div>
       <div v-if="isMobile && route.name !== 'home'" ml-20>
         <n-dropdown
@@ -72,11 +69,11 @@
       </div>
     </div>
     <div flex gap-20 text-16 items-center class="btn-group">
-      <template v-if="route.name === 'home'">
-        <n-button class="register-btn" color="#FFA300" round h-50 w-120
+      <template v-if="!isMobile">
+        <n-button class="register-btn" text-20 color="#FFA300" round h-50 w-120
           >注册</n-button
         >
-        <n-button class="login-btn" color="#00A3E7" round h-50 w-120
+        <n-button class="login-btn" text-20 color="#00A3E7" round h-50 w-120
           >客户登录</n-button
         >
       </template>
@@ -85,14 +82,14 @@
         class="menu-icon"
         w-24px
         h-24px
-        @click="isShowMobileMenu = !isShowMobileMenu"
+        @click.stop="isShowMobileMenu = !isShowMobileMenu"
       ></icon-custom-menu>
       <icon-custom-cancel
         v-if="isMobile && isShowMobileMenu"
         class="menu-icon"
         w-24px
         h-24px
-        @click="isShowMobileMenu = !isShowMobileMenu"
+        @click.stop="isShowMobileMenu = !isShowMobileMenu"
       ></icon-custom-cancel>
     </div>
   </div>
@@ -104,6 +101,7 @@
     fixed
     top-44
     z-999
+    overflow-hidden
     bg="#fff"
   >
     <div
@@ -111,9 +109,37 @@
       border-t="1px solid #E9EAEB"
       leading-52
       text="center 16"
-      @click="handleSelect(item.name as string); isShowMobileMenu = false"
     >
-      {{ item.meta?.title }}
+      <div
+        flex
+        items-center
+        justify-center
+        :style="{
+          color: item.children?.some((item) => item.name === route.name)
+            ? '#fff'
+            : '',
+          background: item.children?.some((item) => item.name === route.name)
+            ? '#48a0e1'
+            : '',
+        }"
+        @click.stop="openSubMenu(item.name as string)"
+      >
+        <span>
+          {{ item.meta?.title }}
+        </span>
+        <icon-custom-arrow-bottom w-30 h-30></icon-custom-arrow-bottom>
+      </div>
+      <div
+        v-for="child in item.children"
+        :style="{
+          display: selectedSubMenu === item.name ? 'block' : 'none',
+          color: child.name === route.name ? '#48a0e1' : '',
+        }"
+        bg="#F3F6F9"
+        @click="handleSelect(child.name as string)"
+      >
+        {{ child.meta?.title }}
+      </div>
     </div>
   </div>
   <div class="empty" h-100></div>
@@ -125,8 +151,8 @@
   import { storeToRefs } from 'pinia'
   import { menuRoute } from '@/router/routes'
   import { useRoute } from 'vue-router'
-  import { computed, h, ref } from 'vue'
-  import type { DropdownOption } from 'naive-ui'
+  import { computed, h, onMounted, ref } from 'vue'
+  import type { DropdownOption, DropdownProps } from 'naive-ui'
 
   const route = useRoute()
 
@@ -134,10 +160,13 @@
 
   const { isMobile } = storeToRefs(useGlobalStore())
   const renderLabel = (option: DropdownOption) => {
-    console.log(option, route)
     return h(
       'span',
-      { style: { color: option.key === route.name ? '#60a5fa' : '' } },
+      {
+        style: {
+          color: option.key === route.name && !isMobile.value ? '#fff' : '',
+        },
+      },
       { default: () => option.label }
     )
   }
@@ -149,6 +178,7 @@
   })
 
   const handleSelect = (key: string) => {
+    isShowMobileMenu.value = false
     if (key === route.name) return
     if (key === 'agreement' && !isMobile.value) {
       window.open('/product-agreement.pdf', '_blank')
@@ -157,6 +187,35 @@
     window.scrollTo({ top: 0 })
     router.push({ name: key })
   }
+
+  type DropdownThemeOverrides = NonNullable<DropdownProps['themeOverrides']>
+  const dropdownOverrides: DropdownThemeOverrides = {
+    optionColorHover: '#48a0e1',
+    optionTextColorHover: '#fff',
+  }
+
+  const nodeProps = (option: DropdownOption) => {
+    return {
+      id: option.key === route.name ? 'selected-item' : '',
+    }
+  }
+
+  const selectedSubMenu = ref()
+
+  const openSubMenu = (key: string) => {
+    if (key === selectedSubMenu.value) {
+      selectedSubMenu.value = ''
+    } else {
+      selectedSubMenu.value = key
+    }
+  }
+
+  onMounted(() => {
+    window.addEventListener('click', () => {
+      selectedSubMenu.value = ''
+      isShowMobileMenu.value = false
+    })
+  })
 </script>
 
 <style scoped lang="scss">
