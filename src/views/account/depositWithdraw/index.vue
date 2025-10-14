@@ -133,7 +133,7 @@
         </div>
       </div>
       <div mt-40 bg="#F4F7F9" rounded-16 w-1440 m-auto px-40 py-42 flex>
-        <div font-700 text="30" leading-43 w-50 mr-28>入金流程</div>
+        <div font-700 text="30" leading-43 w-50 mr-28>出金流程</div>
         <div flex gap-20>
           <arrow
             width="76.25rem"

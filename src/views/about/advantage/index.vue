@@ -164,7 +164,7 @@
             alt=""
           />
           <div class="content" px-30>
-            <div class="title" text-24 mt-15>专业级交易工具</div>
+            <div class="title" text-24 mt-15 font-700>专业级交易工具</div>
             <div class="des" text-16 mt-5>
               提供功能强大的PC/APP端,内置高级图表分析工具、技术指标和绘图功能,助你做出精准的市场判断
             </div>
@@ -186,7 +186,7 @@
             alt=""
           />
           <div class="content" px-30>
-            <div class="title" text-24 mt-15>智能理财与跟单</div>
+            <div class="title" text-24 mt-15 font-700>智能理财与跟单</div>
             <div class="des" text-16 mt-5>
               为你提供组合推荐、智能策略跟单功能。让新手也能轻松交易，省心省力进入投资市场
             </div>
@@ -210,7 +210,7 @@
             alt=""
           />
           <div class="content" px-30>
-            <div class="title" text-24 mt-15>深度市场洞察</div>
+            <div class="title" text-24 mt-15 font-700>深度市场洞察</div>
             <div class="des" text-16 mt-5>
               专业研究团队每日提供深度的市场分析、热点解读和投资策略分析，为你提供有价值的决策参考
             </div>
@@ -255,7 +255,7 @@
             alt=""
           />
           <div class="content" px-30>
-            <div class="title" text-24 mt-15>极速交易与出入金</div>
+            <div class="title" text-24 mt-15 font-700>极速交易与出入金</div>
             <div class="des" text-16 mt-5>
               订单执行速度快，支持多种方式出入金，提现处理高效便捷，确保你的每一笔操作都流畅无阻
             </div>
@@ -278,7 +278,7 @@
             alt=""
           />
           <div class="content" px-30>
-            <div class="title" text-24 mt-15>客服专业服务</div>
+          <div class="title" text-24 mt-15 font-700>客服专业服务</div>
             <div class="des" text-16 mt-5>
               提供24小时的客服支持，打破语言障碍，遇到的各类问题，中文客服随时解答你的疑问
             </div>
@@ -301,7 +301,7 @@
             alt=""
           />
           <div class="content" px-30>
-            <div class="title" text-24 mt-15>投资者策略交流</div>
+            <div class="title" text-24 mt-15 font-700>投资者策略交流</div>
             <div class="des" text-16 mt-5>
               拥有活跃的用户社区和丰富的学习资源，无论你是新手交易者或有经验交易者
               ，都能找到合适的支援

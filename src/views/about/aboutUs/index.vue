@@ -278,7 +278,7 @@
         absolute
         w-128
         h-128
-        left-435
+        left-385
         top-252
         src="@/assets/images/about/team1-avatar.png"
       />
@@ -287,7 +287,7 @@
         absolute
         w-128
         h-128
-        left-940
+        left-890
         top-226
         src="@/assets/images/about/team2-avatar.png"
       />
@@ -305,7 +305,7 @@
         absolute
         w-128
         h-128
-        left-1402
+        left-1350
         top-251
         src="@/assets/images/about/team4-avatar.png"
       />
@@ -314,7 +314,7 @@
         absolute
         w-128
         h-128
-        left-957
+        left-900
         top-437
         src="@/assets/images/about/team5-avatar.png"
       />
@@ -323,7 +323,7 @@
         absolute
         w-128
         h-128
-        left-749
+        left-700
         top-352
         src="@/assets/images/about/team6-avatar.png"
       />
@@ -332,7 +332,7 @@
         absolute
         w-128
         h-128
-        left-579
+        left-530
         top-534
         src="@/assets/images/about/team7-avatar.png"
       />
@@ -341,7 +341,7 @@
         absolute
         w-128
         h-128
-        left-1274
+        left-1200
         top-502
         src="@/assets/images/about/team8-avatar.png"
       />

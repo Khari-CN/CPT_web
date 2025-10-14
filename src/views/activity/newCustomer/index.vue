@@ -152,7 +152,7 @@
             <img
               w-152
               h-152
-              src="@/assets/images/about/team7-avatar.png"
+              src="@/assets/images/newCustomer/avatar.png"
               alt=""
             />
             <div class="content" ml-30 z-1>

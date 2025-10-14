@@ -32,11 +32,12 @@
         class="wrapper"
         flex
         flex-wrap
-        px-240
         justify-center
         gap-x-45
         gap-y-40
         mt-40
+        min-w="1440"
+        m-auto
       >
         <div class="item" bg-white rounded-16 w-450 h-384>
           <img

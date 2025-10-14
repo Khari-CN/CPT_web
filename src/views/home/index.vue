@@ -649,7 +649,7 @@
             <div text-16>下载></div>
           </div>
         </div>
-        <div
+        <!-- <div
           v-if="!isMobile"
           class="platform-btn"
           w-450
@@ -668,7 +668,7 @@
             <div text-30>MT5交易平台</div>
             <div text-16>下载></div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <!-- 福利 -->
