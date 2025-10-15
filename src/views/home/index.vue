@@ -277,60 +277,60 @@
           </div>
         </n-carousel>
       </div>
-      <div v-else mt-20>
-        <n-scrollbar x-scrollable>
-          <div flex gap-10 text-center>
+      <div v-else mt-20 class="swiper">
+        <n-carousel
+        pb="20"
+
+          :interval="2000"
+          :slides-per-view="3"
+          :space-between="20"
+          autoplay
+          draggable
+        >
+          <div text-center>
+            <img src="@/assets/images/home/award-1.png" w-140 h-140 alt="" />
+            <div>迪拜MFFM奖项</div>
+          </div>
+          <div text-center>
+            <img src="@/assets/images/home/award-2.png" w-140 h-140 alt="" />
+            <div>国际金融奖项</div>
+          </div>
+          <div text-center>
+            <img src="@/assets/images/home/award-3.png" w-140 h-140 alt="" />
             <div>
-              <img src="@/assets/images/home/award-1.png" w-140 h-140 alt="" />
-              <div>
-                最具信誉 <br />
-                外汇经纪商
-              </div>
-            </div>
-            <div>
-              <img src="@/assets/images/home/award-2.png" w-140 h-140 alt="" />
-              <div>
-                最具信誉 <br />
-                外汇经纪商
-              </div>
-            </div>
-            <div>
-              <img src="@/assets/images/home/award-3.png" w-140 h-140 alt="" />
-              <div>
-                最具信誉 <br />
-                外汇经纪商
-              </div>
-            </div>
-            <div>
-              <img src="@/assets/images/home/award-4.png" w-140 h-140 alt="" />
-              <div>
-                最具信誉 <br />
-                外汇经纪商
-              </div>
-            </div>
-            <div>
-              <img src="@/assets/images/home/award-5.png" w-140 h-140 alt="" />
-              <div>
-                最具信誉 <br />
-                外汇经纪商
-              </div>
-            </div>
-            <div>
-              <img src="@/assets/images/home/award-6.png" w-140 h-140 alt="" />
-              <div>
-                最具信誉 <br />
-                外汇经纪商
-              </div>
-            </div>
-            <div>
-              <img src="@/assets/images/home/award-7.png" w-140 h-140 alt="" />
-              <div>
-                最具信誉 <br />
-                外汇经纪商
-              </div>
+              最具信誉 <br />
+              外汇经纪商
             </div>
           </div>
-        </n-scrollbar>
+          <div text-center>
+            <img src="@/assets/images/home/award-4.png" w-140 h-140 alt="" />
+            <div>
+              最具信誉 <br />
+              外汇经纪商
+            </div>
+          </div>
+          <div text-center>
+            <img src="@/assets/images/home/award-5.png" w-140 h-140 alt="" />
+            <div>
+              阿联酋国际金融 <br />
+              衍生品提供商
+            </div>
+          </div>
+          <div text-center>
+            <img src="@/assets/images/home/award-6.png" w-140 h-140 alt="" />
+            <div>最佳监管经纪商</div>
+          </div>
+          <div text-center>
+            <img src="@/assets/images/home/award-7.png" w-140 h-140 alt="" />
+            <div>
+              南非交易商博览会 <br />
+              金赞助商
+            </div>
+          </div>
+        </n-carousel>
+        <!-- <n-scrollbar x-scrollable>
+          <div flex gap-10 text-center></div>
+        </n-scrollbar> -->
       </div>
     </div>
     <!-- 产品 -->

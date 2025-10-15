@@ -85,6 +85,23 @@
         }
       }
     }
+    .swiper {
+      ::v-deep(.n-carousel.n-carousel--bottom .n-carousel__dots) {
+        bottom: 0;
+      }
+      ::v-deep(
+        .n-carousel .n-carousel__dots.n-carousel__dots--dot .n-carousel__dot
+      ) {
+        background-color: #fff;
+      }
+      ::v-deep(
+        .n-carousel
+          .n-carousel__dots.n-carousel__dots--dot
+          .n-carousel__dot.n-carousel__dot--active
+      ) {
+        background-color: #1677ff;
+      }
+    }
   }
   .product-wrapper {
     padding: 5rem 0;
@@ -225,14 +242,14 @@
         height: auto;
         padding: 5rem;
         border-radius: 4rem;
-        .sub-title{
+        .sub-title {
           font-size: 6rem;
           font-weight: 700;
         }
-        .description{
+        .description {
           font-size: 4rem;
         }
-        .btn{
+        .btn {
           font-size: 4rem;
         }
       }
