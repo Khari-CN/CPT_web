@@ -21,7 +21,7 @@
             h-120
             alt=""
           />
-          <div text-16 mt-20>24小时服务</div>
+          <div text-16px mt-20>24小时服务</div>
         </div>
         <div>
           <img
@@ -30,7 +30,7 @@
             h-120
             alt=""
           />
-          <div text-16 mt-20>全程陪伴</div>
+          <div text-16px mt-20>全程陪伴</div>
         </div>
         <div>
           <img
@@ -39,7 +39,7 @@
             h-120
             alt=""
           />
-          <div text-16 mt-20>精准解答</div>
+          <div text-16px mt-20>精准解答</div>
         </div>
         <div>
           <img
@@ -48,7 +48,7 @@
             h-120
             alt=""
           />
-          <div text-16 mt-20>随时联系</div>
+          <div text-16px mt-20>随时联系</div>
         </div>
         <div>
           <img
@@ -57,13 +57,13 @@
             h-120
             alt=""
           />
-          <div text-16 mt-20>专家团队</div>
+          <div text-16px mt-20>专家团队</div>
         </div>
       </div>
     </div>
     <div class="block2" pt-60 pb-80 bg="#F5F7F9">
       <div class="title" text-48 font-700 text-center>24小时服务</div>
-      <div class="des" mt-20 text="16 center">
+      <div class="des" mt-20 text="16px center">
         我们深知金融服务不分昼夜，因此提供24小时全天候客服支持，无论何时何地，总有人为你提供专业帮助
       </div>
       <div class="wrapper" flex justify-center gap-40 mt-40>
@@ -89,7 +89,7 @@
     </div>
     <div class="block3" pt-60 pb-80>
       <div class="title" text-48 font-700 text-center>全程陪伴</div>
-      <div class="des" mt-20 text="16 center">
+      <div class="des" mt-20 text="16px center">
         我们致力于成为你投资路上的忠实伙伴，从第一次咨询到长期资产投资，始终陪伴在你身边，提供持续、稳定的专业支持
       </div>
 
@@ -104,7 +104,7 @@
     </div>
     <div class="block4" pt-60 pb-80 bg="#F5F7F9">
       <div class="title" text-48 font-700 text-center>精准解答</div>
-      <div class="des" mt-20 text="16 center">
+      <div class="des" mt-20 text="16px center">
         我们坚持"第一次就做对"的服务理念，确保你的每个问题都能获得最准确、最专业的解答，让你省时省心，高效解决问题
       </div>
       <div class="wrapper" flex justify-center gap-40 mt-40>
@@ -133,7 +133,7 @@
     </div>
     <div class="block5" pt-60 pb-80>
       <div class="title" text-48 font-700 text-center>专家团队</div>
-      <div class="des" mt-20 text="16 center">
+      <div class="des" mt-20 text="16px center">
         我们汇聚行业顶尖人才，组建了一支高素质、高标准的客服团队，为你提供专业级别的服务体验
       </div>
       <div class="wrapper" flex justify-center gap-40 mt-40 text="#fff">
@@ -147,7 +147,7 @@
     </div>
     <div class="block6" pt-60 pb-80>
       <div class="title" text-48 font-700 text-center>随时联系</div>
-      <div class="des" mt-20 text="16 center">
+      <div class="des" mt-20 text="16px center">
         我们提供全天候多渠道客服支持，能快速联系到我们，及时解决你的问题和需求
       </div>
       <div class="wrapper" flex justify-center gap-40 mt-40>

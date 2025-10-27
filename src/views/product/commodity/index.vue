@@ -8,8 +8,8 @@
         <div class="line-right"></div>
       </div>
     </div>
-    <div class="block1" h-369 pt-86 pl-240>
-      <div class="des" w-620 text-16>
+    <div class="block1" h-369 pt-60 pl-240>
+      <div class="des" w-620 text-18px>
         <div>
           大宗商品价格紧密联动全球宏观经济、地缘政治与供需格局。其波动直接影响各国通胀、汇率及产业链成本，因此不仅是企业进行成本控制和风险管理的核心，也是投资者洞察经济周期、进行资产配置的重要工具。
         </div>
@@ -17,22 +17,30 @@
           无论你是初入市场的交易新手，还是经验丰富的资深投资者，我们都能通过直观易用的交易界面、丰富的教育资源和全天候的客户支持，为你提供卓越的交易体验，助你精准把握市场脉搏，实现财富增值目标。
         </div>
       </div>
+      <img
+        v-if="isMobile"
+        block
+        w-full
+        h-240
+        src="@/assets/images/commodity/m/block1.png"
+      />
     </div>
 
     <div class="block2" pt-60 pb-80 bg="#F5F7F9">
       <div class="title" text-48 font-700 text-center>关于大宗商品投资</div>
-      <div class="des" mt-20 mb-40 text="center 16">
+      <div class="des" mt-20 mb-40 text="center 16px">
         投资大宗商品并非直接购买和储存一桶原油或几吨铜，而是通过金融工具来追踪这些商品的价格变动，从而获利。其特点包括：
       </div>
       <div
         class="wrapper"
         flex
         flex-wrap
-        px-240
         justify-center
         gap-x-45
         gap-y-40
         mt-40
+        min-w="1440"
+        m-auto
       >
         <div class="item" bg-white rounded-16 w-450 h-360>
           <img
@@ -141,8 +149,10 @@
     </div>
 
     <div class="block3" pt-60 pb-80>
-      <div class="title" text-48 font-700 text-center>为何选择我们进行外汇投资？</div>
-      <div class="des" mt-20 mb-40 text="center 16">
+      <div class="title" text-48 font-700 text-center>
+        为何选择我们进行外汇投资？
+      </div>
+      <div class="des" mt-20 mb-40 text="center 16px">
         作为全球最大、流动性最高的金融市场，外汇市场日均交易量超过数万亿美元，其特点包括：
       </div>
       <div class="item1 item" w-1440 h-170 m-auto rounded-16 flex py-25 px-30>
@@ -324,7 +334,9 @@
       </div>
     </div>
     <div class="advantage7" h-370 pt-60 pb-80>
-      <div class="title" text="48 center #fff" font-700>只需三分钟开户 迈向财富的第一步</div>
+      <div class="title" text="48 center #fff" font-700>
+        只需三分钟开户 迈向财富的第一步
+      </div>
       <div class="wrapper" relative flex justify-center gap-40 mt-40>
         <div
           class="download-item"

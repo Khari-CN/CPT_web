@@ -37,7 +37,7 @@
             1. 极致便捷与高效
           </div>
           <div class="sub" m-30 w-1085 text-16>
-            多种支付方式：支持包括银行电汇、信用卡/借记卡、电子钱包等、本地银行转账、在线银行等多种入金渠道。用户可以选择自己最熟悉、最方便的方式。
+            多种支付方式：支持包括银行电汇、信用卡/借记卡、电子钱包等、本地银行转账、在线银行等多种入金渠道。用户可以选择自己最熟悉、最方便的方式。<br />
             24小时可用：平台的入金服务支持全天候操作，让客戶能在市场机会出现时第一时间注入资金
             <br />
             快速处理流程：入金出金可以做到即时到账
@@ -100,7 +100,7 @@
             background="linear-gradient( -90deg, #3090FF 0%, #1B84FC 100%)"
           >
             2.选择“入金”
-            <template #sub> 进入资金存款页面。 </template>
+            <template #sub> 进入资金存款页面 </template>
           </arrow>
           <arrow
             width="60rem"
@@ -133,7 +133,7 @@
         </div>
       </div>
       <div mt-40 bg="#F4F7F9" rounded-16 w-1440 m-auto px-40 py-42 flex>
-        <div font-700 text="30" leading-43 w-50 mr-28>入金流程</div>
+        <div font-700 text="30" leading-43 w-50 mr-28>出金流程</div>
         <div flex gap-20>
           <arrow
             width="76.25rem"

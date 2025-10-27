@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="block1" h-369 pt-86 pl-240>
-      <div class="des" w-620 text-16>
+      <div class="des" w-620 text-18px>
         <div>
           指数是通过一套精密而规则的计算方法，追踪一组代表性资产（如股票、债券、商品等）的整体价格表现，用以综合反映特定市场、行业或主题的整体走势和涨跌状况。
         </div>
@@ -30,18 +30,19 @@
 
     <div class="block2" pt-60 pb-80 bg="#F5F7F9">
       <div class="title" text-48 font-700 text-center>关于指数投资</div>
-      <div class="des" mt-20 mb-40 text="center 16">
+      <div class="des" mt-20 mb-40 text="center 16px">
         跟踪特定市场指数的表现，投资者通过购买指数基金或交易所交易基金（ETF）来实现投資目标,其特点包括：
       </div>
       <div
         class="wrapper"
         flex
         flex-wrap
-        px-240
         justify-center
         gap-x-45
         gap-y-40
         mt-40
+        min-w="1440"
+        m-auto
       >
         <div class="item" bg-white rounded-16 w-450 h-360>
           <img
@@ -132,7 +133,7 @@
 
     <div class="block3" pt-60 pb-80>
       <div class="title" text-48 font-700 text-center>为何选择我们进行外汇投资？</div>
-      <div class="des" mt-20 mb-40 text="center 16">
+      <div class="des" mt-20 mb-40 text="center 16px">
         作为全球最大、流动性最高的金融市场，外汇市场日均交易量超过数万亿美元，其特点包括：
       </div>
       <div class="item1 item" w-1440 h-170 m-auto rounded-16 flex py-25 px-30>

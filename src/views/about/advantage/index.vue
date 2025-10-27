@@ -11,7 +11,7 @@
     </div>
     <div class="advantage1" pt-60 pb-80>
       <div class="title" text-48 font-700 text-center>为何选择我们？</div>
-      <div class="list-wrapper" flex justify-center gap-180 mt-60 text-center>
+      <div class="list-wrapper" flex justify-center gap-180 mt-60 text-center min-w="1440">
         <div>
           <img
             src="@/assets/images/advantage/advantage1-icon1.png"
@@ -23,7 +23,7 @@
             极致安全 <br />
             安心托付
           </div>
-          <div v-else text-16 mt-20>极致安全・安心托付</div>
+          <div v-else text-16px mt-20>极致安全・安心托付</div>
         </div>
         <div>
           <img
@@ -36,7 +36,7 @@
             丰富产品 <br />
             一站式管理
           </div>
-          <div v-else text-16 mt-20>丰富产品・一站式管理</div>
+          <div v-else text-16px mt-20>丰富产品・一站式管理</div>
         </div>
         <div>
           <img
@@ -49,7 +49,7 @@
             智能工具<br />
             赋能决策
           </div>
-          <div v-else text-16 mt-20>智能工具・赋能决策</div>
+          <div v-else text-16px mt-20>智能工具・赋能决策</div>
         </div>
         <div>
           <img
@@ -62,7 +62,7 @@
             低門槛 <br />
             低成本
           </div>
-          <div v-else text-16 mt-20>低門槛 ・低成本</div>
+          <div v-else text-16px mt-20>低門槛 ・低成本</div>
         </div>
         <div>
           <img
@@ -75,13 +75,13 @@
             流畅体验<br />
             卓越服务
           </div>
-          <div v-else text-16 mt-20>流畅体验・卓越服务</div>
+          <div v-else text-16px mt-20>流畅体验・卓越服务</div>
         </div>
       </div>
     </div>
     <div class="advantage2" pt-60 pb-80 bg="#F5F7F9">
       <div class="title" text-48 font-700 text-center>极致安全・安心托付</div>
-      <div class="list-wrapper" flex justify-center gap-45 mt-40>
+      <div class="list-wrapper" flex justify-center gap-45 mt-40 min-w="1440" m-auto>
         <div class="item" bg-white rounded-16 w-450 h-384>
           <img
             src="@/assets/images/advantage/advantage2-icon1.png"
@@ -147,7 +147,7 @@
     </div>
     <div class="intelligence" pt-60 pb-80 bg="#F5F7F9">
       <div class="title" text-48 font-700 text-center>智能工具・赋能决策</div>
-      <div class="wrapper" flex justify-center gap-45 mt-40>
+      <div class="wrapper" flex justify-center gap-45 mt-40 min-w="1440" m-auto>
         <div class="item" bg-white rounded-16 w-450 h-360>
           <img
             v-if="!isMobile"
@@ -164,7 +164,7 @@
             alt=""
           />
           <div class="content" px-30>
-            <div class="title" text-24 mt-15>专业级交易工具</div>
+            <div class="title" text-24 mt-15 font-700>专业级交易工具</div>
             <div class="des" text-16 mt-5>
               提供功能强大的PC/APP端,内置高级图表分析工具、技术指标和绘图功能,助你做出精准的市场判断
             </div>
@@ -186,7 +186,7 @@
             alt=""
           />
           <div class="content" px-30>
-            <div class="title" text-24 mt-15>智能理财与跟单</div>
+            <div class="title" text-24 mt-15 font-700>智能理财与跟单</div>
             <div class="des" text-16 mt-5>
               为你提供组合推荐、智能策略跟单功能。让新手也能轻松交易，省心省力进入投资市场
             </div>
@@ -210,7 +210,7 @@
             alt=""
           />
           <div class="content" px-30>
-            <div class="title" text-24 mt-15>深度市场洞察</div>
+            <div class="title" text-24 mt-15 font-700>深度市场洞察</div>
             <div class="des" text-16 mt-5>
               专业研究团队每日提供深度的市场分析、热点解读和投资策略分析，为你提供有价值的决策参考
             </div>
@@ -237,7 +237,7 @@
     </div>
     <div class="advantage4" pt-60 pb-80 bg="#F5F7F9">
       <div class="title" text-48 font-700 text-center>流畅体验・卓越服务</div>
-      <div class="wrapper" flex justify-center gap-45 mt-40>
+      <div class="wrapper" flex justify-center gap-45 mt-40 min-w="1440" m-auto>
         <div class="item" bg-white rounded-16 w-450 h-360>
           <img
             v-if="!isMobile"
@@ -255,7 +255,7 @@
             alt=""
           />
           <div class="content" px-30>
-            <div class="title" text-24 mt-15>极速交易与出入金</div>
+            <div class="title" text-24 mt-15 font-700>极速交易与出入金</div>
             <div class="des" text-16 mt-5>
               订单执行速度快，支持多种方式出入金，提现处理高效便捷，确保你的每一笔操作都流畅无阻
             </div>
@@ -278,7 +278,7 @@
             alt=""
           />
           <div class="content" px-30>
-            <div class="title" text-24 mt-15>客服专业服务</div>
+          <div class="title" text-24 mt-15 font-700>客服专业服务</div>
             <div class="des" text-16 mt-5>
               提供24小时的客服支持，打破语言障碍，遇到的各类问题，中文客服随时解答你的疑问
             </div>
@@ -301,7 +301,7 @@
             alt=""
           />
           <div class="content" px-30>
-            <div class="title" text-24 mt-15>投资者策略交流</div>
+            <div class="title" text-24 mt-15 font-700>投资者策略交流</div>
             <div class="des" text-16 mt-5>
               拥有活跃的用户社区和丰富的学习资源，无论你是新手交易者或有经验交易者
               ，都能找到合适的支援
@@ -563,11 +563,6 @@
     }
     .description-item {
       background: linear-gradient(180deg, #2c64ff 0%, #3b81fe 100%);
-    }
-    .advantage8 {
-      background: url('@/assets/images/advantage/advantage8-bg.png') no-repeat
-        center;
-      background-size: cover;
     }
     .inexpensive {
       .item1 {

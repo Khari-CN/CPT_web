@@ -1,0 +1,232 @@
+@media screen and (max-width: 768px) {
+  .block1 {
+    padding: 12.5rem 4rem;
+    height: auto;
+    .title {
+      font-size: 4.5rem;
+    }
+    .wrapper {
+      margin-top: 7rem;
+      .item {
+        height: 30rem;
+        width: 100%;
+        background: linear-gradient(180deg, #e2eeff 0%, #cddbff 97%);
+        display: flex;
+        flex-direction: column;
+        .head {
+          background-color: #2e3760;
+          line-height: 8rem;
+          padding: 0 3.5rem;
+          font-size: 3rem;
+          color: #fff;
+          display: inline-block;
+          border-top-left-radius: 4rem;
+          border-bottom-right-radius: 4rem;
+          width: 16rem;
+        }
+        .content {
+          flex: 1;
+          padding: 0 5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          font-size: 3.5rem;
+          width: 100%;
+          margin-top: 0;
+          div:nth-of-type(1) {
+            margin-top: 0;
+          }
+          .des {
+            width: 60rem;
+            line-height: 4.5rem;
+          }
+        }
+        img {
+          width: auto;
+          height: 30rem;
+        }
+      }
+    }
+  }
+  .block2 {
+    background: #f4f7f9;
+    background-size: cover;
+    padding: 0 4rem;
+    width: 100%;
+    overflow: hidden;
+    .title {
+      font-size: 4.5rem;
+    }
+    .wrapper {
+      width: 100%;
+      flex-direction: column;
+      position: relative;
+      .content {
+        padding: 5rem 5rem 0 5rem;
+        .clip-text {
+          font-size: 3.5rem;
+        }
+        .des {
+          margin-top: 5rem;
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          > div {
+            white-space: normal;
+            font-size: 3rem;
+            align-items: start;
+            .dot {
+              width: 1.5rem;
+              height: 1.5rem;
+              margin-top: 1.5rem;
+            }
+          }
+        }
+      }
+      img {
+        bottom: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .block3 {
+    padding: 12.5rem 4rem;
+    .title {
+      font-size: 4.5rem;
+    }
+    .wrapper {
+      flex-direction: column;
+      margin-top: 7.5rem;
+      gap: 7.5rem;
+      padding: 0;
+      > img {
+        display: none;
+      }
+      .item {
+        width: 100%;
+        > div {
+          width: 100%;
+          font-size: 3rem;
+          font-weight: 700;
+        }
+        img {
+          height: 75rem;
+          width: auto;
+        }
+      }
+    }
+  }
+  .block4 {
+    padding: 0 4rem;
+    > div {
+      width: 100%;
+      padding: 5rem;
+      margin-top: 0;
+      > img {
+        width: auto;
+        height: 26rem;
+      }
+      .section1 {
+        > img {
+          width: 14rem;
+          height: 14rem;
+        }
+        .content {
+          margin-left: 3rem;
+          .title {
+            font-size: 3rem;
+            margin-top: 0;
+          }
+          .des {
+            font-size: 3rem;
+            width: 41.5rem;
+            margin-top: 1rem;
+          }
+        }
+      }
+      .section2 {
+        font-size: 3rem;
+        margin-top: 5rem;
+      }
+      .section3 {
+        margin-top: 2.5rem;
+        font-size: 3rem;
+      }
+      .divider {
+        margin-top: 5rem;
+      }
+      .section4 {
+        margin-top: 5rem;
+        font-size: 3rem;
+      }
+      .section5 {
+        margin-top: 0;
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .advantage6 {
+    padding: 5rem 4rem;
+    font-size: 4rem;
+    .title {
+      font-size: 6rem;
+    }
+    .wrapper {
+      flex-wrap: wrap;
+      gap: 3.5rem;
+      text-align: center;
+      justify-content: center;
+      .description-item {
+        background: linear-gradient(180deg, #2c64ff 0%, #3b81fe 100%);
+        flex-direction: column;
+        gap: 1rem;
+        height: auto;
+        width: 26.25rem;
+        padding: 4rem;
+        .main {
+          font-weight: 700;
+        }
+        .sub {
+          font-size: 3.25rem;
+        }
+      }
+    }
+  }
+  .advantage7 {
+    background: url('@/assets/images/about/m/download-bg.png') no-repeat center;
+    background-size: cover;
+    padding: 5rem 4rem;
+    height: 69rem;
+    .title {
+      font-size: 6rem;
+      width: 48rem;
+      margin: auto;
+    }
+    .wrapper {
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 5rem;
+      .download-item {
+        min-width: 167px;
+        padding: 0 1rem 0 4rem;
+        flex: 1;
+        height: 17rem;
+        gap: 2.5rem;
+        border-radius: 2.5rem;
+        min-width: 167px;
+        img {
+          width: 12rem;
+        }
+        .main-content {
+          font-size: 3.5rem;
+        }
+        .sub-content {
+          font-size: 3rem;
+          color: #808080;
+        }
+      }
+    }
+  }
+}

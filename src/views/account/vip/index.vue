@@ -12,9 +12,13 @@
 
     <div class="block1" h-369 pt-106>
       <div class="des" w-1152 text-36 text-center m-auto font-700>
-        尊贵账户是我们为高净值客户和专业投资者打造的顶级服务，
+        尊贵账户是我们为高净值客户和专业投资者打造的顶级服务<span
+          v-if="isMobile"
+          >，</span
+        >
         <br v-if="!isMobile" />
-        提供超越常规账户的卓越交易体验和专属特权。 <br v-if="!isMobile" />
+        提供超越常规账户的卓越交易体验和专属特权<span v-if="isMobile">。</span>
+        <br v-if="!isMobile" />
         该账户类型专为资金量充足、交易活跃且需求精准的投资者设计
       </div>
     </div>
@@ -28,7 +32,6 @@
         class="wrapper"
         flex
         flex-wrap
-        px-240
         justify-center
         gap-x-45
         gap-y-40
@@ -177,10 +180,12 @@
 
     <div class="block3" h-600 text="center #fff">
       <div class="content" text="48" font-700 pt-200>
-        选择尊贵账户，不仅是选择了一个交易账户，
-        <br v-if="!isMobile" />更是选择了一个全方位的合作伙伴。<br
-          v-if="!isMobile"
-        />
+        选择尊贵账户，不仅是选择了一个交易账户 <span v-if="isMobile">，</span>
+        <br v-if="!isMobile" />更是选择了一个全方位的合作伙伴<span
+          v-if="isMobile"
+          >。</span
+        >
+        <br v-if="!isMobile" />
         我们致力于为你提供最优质的服务，助你实现投资目标
       </div>
     </div>

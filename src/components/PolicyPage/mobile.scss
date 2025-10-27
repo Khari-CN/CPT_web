@@ -35,7 +35,7 @@
         2 2;
     }
   }
-  .wrapper{
+  .wrapper {
     padding: 0;
   }
   .block2 {
@@ -59,7 +59,7 @@
       flex-wrap: wrap;
       gap: 3.5rem;
       text-align: center;
-      justify-content: start;
+      justify-content: center;
       .description-item {
         background: linear-gradient(180deg, #2c64ff 0%, #3b81fe 100%);
         flex-direction: column;
@@ -91,6 +91,8 @@
       gap: 2rem;
       margin-top: 5rem;
       .download-item {
+        min-width: 167px;
+        min-width: 167px;
         padding: 0 1rem 0 4rem;
         flex: 1;
         height: 17rem;

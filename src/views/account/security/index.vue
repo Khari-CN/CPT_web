@@ -33,18 +33,19 @@
 
     <div class="block2" pt-60 pb-80 bg="#F5F7F9">
       <div class="title" text-48 font-700 text-center>为你的投资之路护航</div>
-      <div class="des" mt-20 mb-40 text="center 16">
+      <div class="des" mt-20 mb-40 text="center 16px">
         我们的平台将账户安全作为首要任务，采用多重安全措施和先进技术，构建了完善的账户安全保护
       </div>
       <div
         class="wrapper"
         flex
         flex-wrap
-        px-240
         justify-center
         gap-x-45
         gap-y-40
         mt-40
+        min-w="1440"
+        m-auto
       >
         <div class="item" bg-white rounded-16 w-450 h-384>
           <img
@@ -412,7 +413,7 @@
   @import url('./mobile.scss');
   @media screen and (min-width: 768px) {
     .banner {
-      background: url('@/assets/images/real/banner.png') no-repeat center;
+      background: url('@/assets/images/security/banner.png') no-repeat center;
       background-size: cover;
       .line-right {
         border-top: 2px solid;
